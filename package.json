@@ -1,0 +1,25 @@
+{
+  "name": "wipebot",
+  "version": "1.0.0",
+  "description": "Crisp Plugin for automated chat cleanup",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "dev": "node lib/index.js & node cron_scheduler.js",
+    "wipebot": "node lib/index.js & node cron_scheduler.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "crisp-api": "*",
+    "dotenv": "^16.4.5",
+    "envalid": "*",
+    "express": "^4.18.3",
+    "fs-extra": "^11.2.0",
+    "moment-timezone": "^0.5.43",
+    "node-cron": "^3.0.3",
+    "sortablejs": "^1.15.2",
+    "uuid": "^9.0.1"
+  }
+}

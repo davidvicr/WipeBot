@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>WipeBot UI</title>
+  <style>
+    /* ... (dein gesamtes CSS bleibt vollständig erhalten – hier nicht wiederholt, um Platz zu sparen) ... */
+  </style>
+</head>
+<body>
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <h1>WipeBot Einstellungen</h1>
+
+      <!-- Filter-Erstellung -->
+      <div class="filter-section">
+        <h2>Filter erstellen</h2>
+
+        <label for="filterName">Filtername</label>
+        <input type="text" id="filterName" />
+
+        <label for="filterGroup">Filtergruppe</label>
+        <select id="filterGroup">
+          <option value="">(Keine Gruppe)</option>
+        </select>
+
+        <label for="maxDays">Maximales Alter der Chats (Tage)</label>
+        <input type="number" id="maxDays" min="1" value="30" />
+
+        <label for="closedOnly">Nur geschlossene Chats löschen?</label>
+        <select id="closedOnly">
+          <option value="true">Ja</option>
+          <option value="false">Nein</option>
+        </select>
+
+        <label>Plattformen</label>
+        <label><input type="checkbox" class="platform" value="alle" /> Alle Plattformen</label>
+        <label><input type="checkbox" class="platform" value="whatsapp" /> WhatsApp</label>
+        <label><input type="checkbox" class="platform" value="webchat" /> Webchat</label>
+        <label><input type="checkbox" class="platform" value="email" /> E-Mail</label>
+        <label><input type="checkbox" class="platform" value="messenger" /> Facebook Messenger</label>
+        <label><input type="checkbox" class="platform" value="instagram" /> Instagram</label>
+        <label><input type="checkbox" class="platform" value="telegram" /> Telegram</label>
+
+        <label>Zu löschende Segmente</label>
+        <div class="tag-input" id="includeTagContainer">
+          <input type="text" id="includeInput" placeholder="Enter & Enter drücken" />
+        </div>
+
+        <label>Zu schützende Segmente</label>
+        <div class="tag-input" id="excludeTagContainer">
+          <input type="text" id="excludeInput" placeholder="Enter & Enter drücken" />
+        </div>
+
+        <label class="toggle-label">
+          <input type="checkbox" id="deleteSegmentsOnly" />
+          Nur ausgewählte Segmente löschen
+        </label>
+
+        <label class="toggle-label">
+          <input type="checkbox" id="autoEnabled" />
+          Automatische Löschung aktivieren
+        </label>
+
+        <label for="autoTime">Uhrzeit für automatische Löschung (MEZ)</label>
+        <input type="time" id="autoTime" value="03:00" />
+
+        <div class="preview-box" id="filterPreview">
+          <strong>🧪 Vorschau:</strong>
+          <code id="previewText">Fülle Felder aus, um Vorschau zu sehen...</code>
+        </div>
+
+        <button id="addFilterBtn">➕ Filter speichern</button>
+        <button id="resetBtn" style="display: none;">🧹 Eingabe zurücksetzen</button>
+      </div>
+
+      <!-- Filter-Anzeige -->
+      <div class="filter-section">
+        <h2>Bestehende Filter</h2>
+        <ul id="filterList"></ul>
+      </div>
+
+      <!-- Gruppen-Verwaltung -->
+      <div class="filter-section">
+        <h2>Gruppenverwaltung</h2>
+        <input type="text" id="newGroupName" placeholder="Neue Gruppe benennen…" />
+        <button id="createGroupBtn">➕ Neue Gruppe anlegen</button>
+        <ul id="groupList"></ul>
+      </div>
+
+      <button id="cleanupBtn">🧹 Cleanup jetzt starten</button>
+      <button id="disconnectBtn">🛑 Plugin von Website trennen</button>
+    </div>
+  </div>
+
+  <!-- Ausgelagerte Logik -->
+  <script type="module">
+    import { initWipeBotUI } from "./ui/config-ui.js";
+    initWipeBotUI();
+  </script>
+</body>
+</html>
