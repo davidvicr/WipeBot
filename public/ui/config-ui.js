@@ -20,7 +20,9 @@ import {
   validateFilter,
   getSchedulerStatus,
   toggleFeedbackMode,
-  getPluginVersion
+  getPluginVersion,
+  loadStatistics,
+  resetStatistics
 } from './api.js';
 
 // Konstanten für die Plattform-Mapping-Logik
@@ -114,6 +116,9 @@ export async function initWipeBotUI() {
     disconnectBtn.addEventListener("click", () => handleDisconnectPlugin(currentConfig));
     createGroupBtn.addEventListener("click", () => handleCreateGroup(currentConfig));
     
+    // Statistik-Tab initialisieren
+    await initStatisticsTab(currentConfig);
+    
     // Lade-Indikator entfernen
     document.body.removeChild(loadingIndicator);
     
@@ -130,6 +135,291 @@ export async function initWipeBotUI() {
   } catch (error) {
     console.error("Fehler beim Initialisieren der UI:", error);
     alert("Fehler beim Laden der Konfiguration. Bitte versuche es erneut.");
+  }
+}
+
+/**
+ * Initialisiert das Statistik-Dashboard
+ * @param {Object} config - Aktuelle Konfiguration
+ */
+async function initStatisticsTab(config) {
+  try {
+    // Statistiken laden
+    const statistics = await loadStatistics();
+    
+    // UI-Elemente aktualisieren
+    updateStatisticsDisplay(statistics);
+    
+    // Export-Button einrichten (falls noch nicht geschehen)
+    document.getElementById('exportBtn').addEventListener('click', exportFiltersAndGroups);
+    
+    // Import-Button-Logik ist bereits in der Hauptdatei implementiert
+    
+    // Aktualisierungsintervall einrichten (alle 60 Sekunden)
+    setInterval(async () => {
+      const updatedStats = await loadStatistics(true); // Force refresh
+      updateStatisticsDisplay(updatedStats);
+    }, 60000);
+    
+  } catch (error) {
+    console.error("Fehler beim Initialisieren des Statistik-Tabs:", error);
+  }
+}
+
+/**
+ * Aktualisiert die Anzeige des Statistik-Dashboards
+ * @param {Object} statistics - Die anzuzeigenden Statistiken
+ */
+function updateStatisticsDisplay(statistics) {
+  // Statistik-Karten aktualisieren
+  document.getElementById('totalDeleted').textContent = statistics.totalDeletedChats || 0;
+  document.getElementById('activeFilters').textContent = statistics.activeFilters || 0;
+  
+  // Nächste geplante Ausführung
+  if (statistics.nextScheduledRun) {
+    const nextDate = new Date(statistics.nextScheduledRun);
+    // Kurze Darstellung für die Karte
+    document.getElementById('nextCleanup').textContent = nextDate.toLocaleTimeString('de-DE', {
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+  } else {
+    document.getElementById('nextCleanup').textContent = '-';
+  }
+  
+  // Letzte Ausführung
+  if (statistics.lastRun) {
+    const lastDate = new Date(statistics.lastRun);
+    // Kurze Darstellung für die Karte
+    document.getElementById('lastRun').textContent = lastDate.toLocaleDateString('de-DE', {
+      day: '2-digit',
+      month: '2-digit'
+    });
+  } else {
+    document.getElementById('lastRun').textContent = '-';
+  }
+  
+  // Weitere Statistik-Elemente hinzufügen
+  addDetailedStatistics(statistics);
+}
+
+/**
+ * Fügt detaillierte Statistiken zum Dashboard hinzu
+ * @param {Object} statistics - Die anzuzeigenden Statistiken
+ */
+function addDetailedStatistics(statistics) {
+  const statsContainer = document.getElementById('statistikTab');
+  
+  // Bestehende detaillierte Statistiken entfernen
+  const existingDetails = document.getElementById('detailedStats');
+  if (existingDetails) {
+    existingDetails.remove();
+  }
+  
+  // Container für detaillierte Statistiken erstellen
+  const detailsContainer = document.createElement('div');
+  detailsContainer.id = 'detailedStats';
+  detailsContainer.className = 'filter-form';
+  
+  // Überschrift
+  const heading = document.createElement('h2');
+  heading.textContent = 'Detaillierte Statistiken';
+  detailsContainer.appendChild(heading);
+  
+  // Chat-Informationen
+  const chatInfo = document.createElement('div');
+  chatInfo.className = 'stats-row';
+  chatInfo.innerHTML = `
+    <div class="stats-item">
+      <div class="stats-label">Aktuelle Chats:</div>
+      <div class="stats-value">${statistics.currentChats || 0}</div>
+    </div>
+    <div class="stats-item">
+      <div class="stats-label">Betroffene Chats:</div>
+      <div class="stats-value">${statistics.affectedChats || 0}</div>
+    </div>
+  `;
+  detailsContainer.appendChild(chatInfo);
+  
+  // Lösch-Informationen
+  const deleteInfo = document.createElement('div');
+  deleteInfo.className = 'stats-row';
+  deleteInfo.innerHTML = `
+    <div class="stats-item">
+      <div class="stats-label">Gelöschte Chats (14 Tage):</div>
+      <div class="stats-value">${statistics.lastTwoWeeks?.deletedChats || 0}</div>
+    </div>
+    <div class="stats-item">
+      <div class="stats-label">Gelöschte Segmente (14 Tage):</div>
+      <div class="stats-value">${statistics.lastTwoWeeks?.deletedSegments || 0}</div>
+    </div>
+  `;
+  detailsContainer.appendChild(deleteInfo);
+  
+  // Zusätzliche Infos
+  const totalInfo = document.createElement('div');
+  totalInfo.className = 'stats-row';
+  totalInfo.innerHTML = `
+    <div class="stats-item">
+      <div class="stats-label">Gesamt gelöschte Chats:</div>
+      <div class="stats-value">${statistics.totalDeletedChats || 0}</div>
+    </div>
+    <div class="stats-item">
+      <div class="stats-label">Gesamt gelöschte Segmente:</div>
+      <div class="stats-value">${statistics.totalDeletedSegments || 0}</div>
+    </div>
+  `;
+  detailsContainer.appendChild(totalInfo);
+  
+  // Zeitpunkt-Informationen
+  const timeInfo = document.createElement('div');
+  timeInfo.className = 'stats-row';
+  
+  // Formatiere die Zeitpunkte
+  const lastRunDate = statistics.lastRun 
+    ? new Date(statistics.lastRun).toLocaleString('de-DE')
+    : 'Nie';
+    
+  const nextRunDate = statistics.nextScheduledRun 
+    ? new Date(statistics.nextScheduledRun).toLocaleString('de-DE')
+    : 'Keine geplant';
+  
+  timeInfo.innerHTML = `
+    <div class="stats-item">
+      <div class="stats-label">Letzte Ausführung:</div>
+      <div class="stats-value">${lastRunDate}</div>
+    </div>
+    <div class="stats-item">
+      <div class="stats-label">Nächste geplante Ausführung:</div>
+      <div class="stats-value">${nextRunDate}</div>
+    </div>
+  `;
+  detailsContainer.appendChild(timeInfo);
+  
+  // Zeitraum-Auswahl hinzufügen
+  const periodSelector = document.createElement('div');
+  periodSelector.className = 'period-selector';
+  periodSelector.innerHTML = `
+    <div class="stats-label">Zeitraum:</div>
+    <div class="period-buttons">
+      <button class="period-btn" data-period="day">Tag</button>
+      <button class="period-btn active" data-period="week">Woche</button>
+      <button class="period-btn" data-period="month">Monat</button>
+      <button class="period-btn" data-period="all">Alle</button>
+    </div>
+  `;
+  detailsContainer.appendChild(periodSelector);
+  
+  // Event-Listener für Zeitraum-Buttons
+  periodSelector.querySelectorAll('.period-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      // Aktiven Button markieren
+      periodSelector.querySelectorAll('.period-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      // Detaillierte Statistiken für den gewählten Zeitraum laden
+      const period = btn.getAttribute('data-period');
+      try {
+        const detailedStats = await getDetailedStatistics(period);
+        // UI aktualisieren (vereinfachte Version - in der Praxis würde man hier mehr machen)
+        updateStatisticsDisplay(detailedStats);
+      } catch (error) {
+        console.error('Fehler beim Laden der Statistiken für Zeitraum:', period, error);
+      }
+    });
+  });
+  
+  // Reset-Button hinzufügen
+  const resetButton = document.createElement('button');
+  resetButton.id = 'resetStatsBtn';
+  resetButton.className = 'btn-danger';
+  resetButton.textContent = 'Statistiken zurücksetzen';
+  resetButton.addEventListener('click', async () => {
+    if (confirm('Möchtest du wirklich alle Statistiken zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden!')) {
+      try {
+        await resetStatistics();
+        // Statistiken neu laden und anzeigen
+        const updatedStats = await loadStatistics(true);
+        updateStatisticsDisplay(updatedStats);
+      } catch (error) {
+        console.error('Fehler beim Zurücksetzen der Statistiken:', error);
+        alert(`Fehler beim Zurücksetzen: ${error.message}`);
+      }
+    }
+  });
+  detailsContainer.appendChild(resetButton);
+  
+  // Container zum Statistik-Tab hinzufügen
+  statsContainer.appendChild(detailsContainer);
+  
+  // CSS für detaillierte Statistiken hinzufügen, falls noch nicht vorhanden
+  if (!document.getElementById('stats-styles')) {
+    const style = document.createElement('style');
+    style.id = 'stats-styles';
+    style.textContent = `
+      .stats-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: var(--spacing-md);
+        flex-wrap: wrap;
+      }
+      
+      .stats-item {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: var(--spacing-sm);
+      }
+      
+      .stats-label {
+        color: var(--text-secondary);
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--spacing-xs);
+      }
+      
+      .stats-value {
+        color: var(--text-primary);
+        font-size: var(--font-size-lg);
+        font-weight: bold;
+      }
+      
+      #resetStatsBtn {
+        margin-top: var(--spacing-lg);
+      }
+      
+      .period-selector {
+        margin-top: var(--spacing-lg);
+        margin-bottom: var(--spacing-md);
+      }
+      
+      .period-buttons {
+        display: flex;
+        gap: var(--spacing-xs);
+        margin-top: var(--spacing-xs);
+      }
+      
+      .period-btn {
+        background-color: var(--bg-tertiary);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--text-secondary);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border-radius: var(--border-radius-sm);
+        cursor: pointer;
+        transition: var(--transition-normal);
+      }
+      
+      .period-btn:hover {
+        background-color: rgba(54, 181, 211, 0.1);
+        color: var(--text-primary);
+      }
+      
+      .period-btn.active {
+        background-color: rgba(54, 181, 211, 0.2);
+        color: var(--accent-primary);
+        border-color: var(--accent-primary);
+        box-shadow: 0 0 8px var(--glow-primary);
+      }
+    `;
+    document.head.appendChild(style);
   }
 }
 
@@ -1068,6 +1358,10 @@ async function handleCleanupNow() {
     for (const filter of activeFilters) {
       await runCleanupNow(filter.id);
     }
+    
+    // Nach dem Cleanup Statistiken aktualisieren
+    const updatedStats = await loadStatistics(true);
+    updateStatisticsDisplay(updatedStats);
     
   } catch (error) {
     console.error("Fehler beim Ausführen des Cleanups:", error);

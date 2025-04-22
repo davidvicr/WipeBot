@@ -1,0 +1,17 @@
+{
+  "websites": {
+    "WEBSITE_ID": {
+      "totalDeletedChats": 0,
+      "totalDeletedSegments": 0,
+      "lastTwoWeeks": {
+        "deletedChats": 0,
+        "deletedSegments": 0
+      },
+      "dailyStats": {},
+      "lastRun": null,
+      "nextScheduledRun": null,
+      "created": 1650000000000,
+      "updated": 1650000000000
+    }
+  }
+}
