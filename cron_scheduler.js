@@ -11,22 +11,13 @@
  */
 
 const cron = require("node-cron");
-const { cleanEnv, str, bool } = require("envalid");
 const path = require("path");
 const fs = require("fs");
 const filterManager = require("./lib/filter_manager");
 const wipebotPlugin = require("./lib/wipebot_plugin");
 const { logDebug } = require("./utils/debugLogger");
 const { log, cleanupOldLogs } = require("./utils/logger");
-
-// Umgebungsvariablen validieren
-const env = cleanEnv(process.env, {
-  CRISP_API_IDENTIFIER: str(),
-  CRISP_API_KEY: str(),
-  CRISP_PLUGIN_URN: str(),
-  CRISP_SIGNING_SECRET: str(),
-  DEBUG_MODE: bool({ default: false })
-});
+const { env } = require("./auth"); // Importiere das validierte env-Objekt aus auth.js
 
 // Speichern aller aktiven Cron-Jobs mit ihrer ID
 const activeJobs = new Map();
