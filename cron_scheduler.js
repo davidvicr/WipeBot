@@ -123,20 +123,28 @@ function scheduleFilter(websiteId, filter) {
       throw new Error(`Ungültige Cron-Expression: ${cronExpression}`);
     }
     
-    // Berechne den nächsten Ausführungszeitpunkt
-    const nextRun = getNextScheduledRunTime(cronExpression);
+    // Nächsten Ausführungszeitpunkt berechnen
+    const nextRunDate = getNextExecutionTime(cronExpression);
     
-    // Aktualisiere die Statistik-Informationen mit dem nächsten Ausführungszeitpunkt
-    wipebotPlugin.updateNextScheduledRun(websiteId, nextRun.getTime());
+    // Statistik über nächste geplante Ausführung aktualisieren
+    if (nextRunDate) {
+      wipebotPlugin.updateNextScheduledRun(websiteId, nextRunDate.getTime());
+    }
     
     // Cron-Job erstellen und speichern
     const job = cron.schedule(cronExpression, async () => {
       await executeFilterJob(websiteId, filter);
+      
+      // Nach Ausführung den nächsten geplanten Zeitpunkt aktualisieren
+      const nextRunDate = getNextExecutionTime(cronExpression);
+      if (nextRunDate) {
+        wipebotPlugin.updateNextScheduledRun(websiteId, nextRunDate.getTime());
+      }
     });
     
     activeJobs.set(jobId, job);
     
-    logDebug(`✅ Filter "${filter.name}" geplant für ${filter.autoTime} Uhr (${cronExpression}), nächste Ausführung: ${nextRun.toISOString()}`);
+    logDebug(`✅ Filter "${filter.name}" geplant für ${filter.autoTime} Uhr (${cronExpression})`);
   } catch (error) {
     logDebug(`❌ Fehler beim Planen von Filter "${filter.name}" (${filter.id}): ${error.message}`);
     jobStats.lastError = `Planungsfehler für ${filter.name}: ${error.message}`;
@@ -146,32 +154,32 @@ function scheduleFilter(websiteId, filter) {
 /**
  * Berechnet den nächsten Ausführungszeitpunkt für eine Cron-Expression
  * @param {string} cronExpression - Die Cron-Expression
- * @returns {Date} - Der nächste geplante Ausführungszeitpunkt
+ * @returns {Date|null} - Der nächste Ausführungszeitpunkt oder null bei Fehler
  */
-function getNextScheduledRunTime(cronExpression) {
-  // Cron-Expression analysieren
-  const parts = cronExpression.split(' ');
-  const minute = parseInt(parts[0], 10);
-  const hour = parseInt(parts[1], 10);
-  
-  // Nächsten Ausführungszeitpunkt berechnen
-  const now = new Date();
-  const nextRun = new Date(
-    now.getFullYear(), 
-    now.getMonth(), 
-    now.getDate(), 
-    hour, 
-    minute, 
-    0, 
-    0
-  );
-  
-  // Wenn der berechnete Zeitpunkt in der Vergangenheit liegt, füge einen Tag hinzu
-  if (nextRun <= now) {
-    nextRun.setDate(nextRun.getDate() + 1);
+function getNextExecutionTime(cronExpression) {
+  try {
+    const now = new Date();
+    
+    // Cron-Expression parsen
+    const [minute, hour, dayOfMonth, month, dayOfWeek] = cronExpression.split(' ');
+    
+    // Einfache Berechnung für tägliche Jobs (unsere Standardfälle)
+    let nextRun = new Date();
+    nextRun.setHours(parseInt(hour, 10));
+    nextRun.setMinutes(parseInt(minute, 10));
+    nextRun.setSeconds(0);
+    nextRun.setMilliseconds(0);
+    
+    // Wenn der Zeitpunkt bereits vorbei ist, zum nächsten Tag springen
+    if (nextRun <= now) {
+      nextRun.setDate(nextRun.getDate() + 1);
+    }
+    
+    return nextRun;
+  } catch (error) {
+    logDebug(`❌ Fehler bei der Berechnung des nächsten Ausführungszeitpunkts: ${error.message}`);
+    return null;
   }
-  
-  return nextRun;
 }
 
 /**
@@ -197,17 +205,11 @@ async function executeFilterJob(websiteId, filter) {
       logDebug(`❌ Fehler bei automatischer Löschung für Filter "${filter.name}": ${result.error}`);
       log(`Fehler bei automatischer Löschung für Filter "${filter.name}": ${result.error}`);
     }
-    
-    // Nach der Ausführung den Job neu planen, um den nächsten Ausführungszeitpunkt zu aktualisieren
-    scheduleFilter(websiteId, filter);
   } catch (error) {
     jobStats.failed++;
     jobStats.lastError = error.message;
     logDebug(`❌ Unerwarteter Fehler bei Job-Ausführung für Filter "${filter.name}": ${error.message}`);
     log(`Fehler bei automatischer Löschung für Filter "${filter.name}": ${error.message}`);
-    
-    // Trotz Fehler den Job neu planen
-    scheduleFilter(websiteId, filter);
   }
 }
 
@@ -309,19 +311,12 @@ async function executeFilterNow(websiteId, filterId) {
     const filter = filterManager.findFilter(websiteId, filterId);
     
     if (!filter) {
-      return { success: false, error: `Filter mit ID ${filterId} nicht gefunden` };
+      throw new Error(`Filter mit ID ${filterId} nicht gefunden`);
     }
     
     logDebug(`🚀 Manueller Start des Filters "${filter.name}" (${filter.id})`);
     
-    const result = await wipebotPlugin.runCleanup(websiteId, filter.id);
-    
-    // Nach der manuellen Ausführung den Filter neu planen, wenn er automatisch ausgeführt werden soll
-    if (filter.autoEnabled && filter.autoTime) {
-      scheduleFilter(websiteId, filter);
-    }
-    
-    return result;
+    return await wipebotPlugin.runCleanup(websiteId, filter.id);
   } catch (error) {
     logDebug(`❌ Fehler bei manueller Ausführung des Filters: ${error.message}`);
     return { success: false, error: error.message };
@@ -353,46 +348,13 @@ function watchConfigChanges() {
   }
 }
 
-/**
- * Aktualisiert die nächsten geplanten Ausführungszeiten aller aktiven Filter
- * @param {string} websiteId - Die Website-ID
- */
-function updateAllNextRunTimes(websiteId) {
-  try {
-    // Alle aktiven Jobs für die Website durchgehen
-    for (const [jobId, job] of activeJobs.entries()) {
-      if (jobId.startsWith(`${websiteId}:`)) {
-        const filterId = jobId.split(':')[1];
-        const filter = filterManager.findFilter(websiteId, filterId);
-        
-        if (filter && filter.autoEnabled && filter.autoTime) {
-          // Cron-Expression erstellen
-          const [hour, minute] = filter.autoTime.split(":");
-          const cronExpression = `${minute} ${hour} * * *`;
-          
-          // Nächsten Ausführungszeitpunkt berechnen
-          const nextRun = getNextScheduledRunTime(cronExpression);
-          
-          // Statistik aktualisieren
-          wipebotPlugin.updateNextScheduledRun(websiteId, nextRun.getTime());
-          
-          logDebug(`🔄 Nächste Ausführungszeit für Filter "${filter.name}" aktualisiert: ${nextRun.toISOString()}`);
-        }
-      }
-    }
-  } catch (error) {
-    logDebug(`❌ Fehler beim Aktualisieren der nächsten Ausführungszeiten: ${error.message}`);
-  }
-}
-
 // Öffentliche API des Moduls
 module.exports = {
   initScheduler,
   stopScheduler,
   refreshScheduleForWebsite,
   executeFilterNow,
-  getSchedulerStats,
-  updateAllNextRunTimes
+  getSchedulerStats
 };
 
 // Scheduler starten, wenn dieses Modul direkt ausgeführt wird
