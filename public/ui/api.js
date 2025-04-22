@@ -592,6 +592,30 @@ export async function loadStatistics(forceRefresh = false) {
 }
 
 /**
+ * Setzt die Statistiken für eine Website zurück
+ * @returns {Promise<Object>} Ergebnis des Zurücksetzens
+ */
+export async function resetStatistics() {
+  try {
+    // Website-ID holen
+    const websiteId = getWebsiteId();
+    
+    // Bestätigungsabfrage wurde bereits in der UI vorgenommen
+    const response = await fetchWithErrorHandling(`/api/statistics/${websiteId}/reset`, {
+      method: 'POST',
+      body: JSON.stringify({ confirm: true })
+    });
+    
+    statusIndicator.success('Statistiken wurden zurückgesetzt');
+    return response;
+  } catch (error) {
+    console.error("Fehler beim Zurücksetzen der Statistiken:", error);
+    statusIndicator.error(`Statistiken konnten nicht zurückgesetzt werden: ${error.message}`);
+    return { success: false, error: error.message };
+  }
+}
+
+/**
  * Hilfsfunktion zum Extrahieren der Website-ID
  * @returns {string} Die aktuelle Website-ID
  */
@@ -981,5 +1005,6 @@ export default {
   getSchedulerStatus,
   toggleFeedbackMode,
   getPluginVersion,
-  registerForRealTimeUpdates
+  registerForRealTimeUpdates,
+  resetStatistics  // Neue Funktion hinzugefügt
 };
