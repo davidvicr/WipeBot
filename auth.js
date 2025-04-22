@@ -1,5 +1,38 @@
+const fs = require('fs');
+const path = require('path');
 const { cleanEnv, str, bool } = require("envalid");
 const { logDebug } = require("./utils/debugLogger");
+
+// DEBUG_MODE Erkennung
+const DEBUG_MODE = process.env.DEBUG_MODE === "true";
+
+// Passende .env-Datei basierend auf Modus laden
+function loadEnvFile() {
+  try {
+    const envFile = DEBUG_MODE ? '.env.dev' : '.env.prod';
+    const envPath = path.join(__dirname, envFile);
+    
+    if (fs.existsSync(envPath)) {
+      const envConfig = require('dotenv').parse(fs.readFileSync(envPath));
+      
+      // Umgebungsvariablen setzen
+      for (const key in envConfig) {
+        process.env[key] = envConfig[key];
+      }
+      
+      if (DEBUG_MODE) {
+        console.log(`🔧 Debug-Modus: ${envFile} geladen mit Development Token`);
+      }
+    } else {
+      console.warn(`⚠️ ${envFile} existiert nicht, nutze bestehende Umgebungsvariablen`);
+    }
+  } catch (error) {
+    console.error(`❌ Fehler beim Laden der Umgebungsvariablen: ${error.message}`);
+  }
+}
+
+// Beim Importieren der Datei direkt die passende .env-Datei laden
+loadEnvFile();
 
 // Umgebungsvariablen validieren
 const env = cleanEnv(process.env, {
@@ -33,4 +66,16 @@ function authenticate(req) {
   return isValid;
 }
 
-module.exports = { authenticate };
+// Gibt zurück, ob wir im Debug-Modus sind
+function isDebugMode() {
+  return env.DEBUG_MODE;
+}
+
+// Gibt den Web-Hook-Endpunkt basierend auf dem Modus zurück
+function getWebHook() {
+  return env.DEBUG_MODE 
+    ? "https://dev.d-vicr.de/hook/message"
+    : "https://wipebot.d-vicr.de/hook/message";
+}
+
+module.exports = { authenticate, isDebugMode, getWebHook, env };
