@@ -1,9 +1,50 @@
 {
-  "$id": "crisp:service:api/_schema/plugin#urn:my.account:pluginname:0",
+  "$id": "crisp:service:api/_schema/plugin#urn:david.crump:wipebot:0",
   "type": "object",
   "properties": {
-    "message": {
-      "type": "string"
+    "retention_days": {
+      "type": "number",
+      "title": "Statistik-Speicherdauer",
+      "description": "Anzahl der Tage, für die detaillierte Statistiken aufbewahrt werden",
+      "default": 30
+    },
+    "log_level": {
+      "type": "string",
+      "title": "Log-Level",
+      "description": "Detaillierungsgrad der Protokollierung",
+      "enum": [
+        "error",
+        "warn",
+        "info",
+        "debug"
+      ],
+      "default": "info"
+    },
+    "auto_cleanup_enabled": {
+      "type": "boolean",
+      "title": "Automatische Bereinigung",
+      "description": "Aktiviert die automatische Ausführung aktiver Filter nach Zeitplan",
+      "default": true
+    },
+    "default_settings": {
+      "type": "object",
+      "title": "Standardeinstellungen",
+      "properties": {
+        "default_time": {
+          "type": "string",
+          "title": "Standard-Uhrzeit für Auto-Cleanup",
+          "description": "Uhrzeit im Format HH:MM (24h)",
+          "default": "03:00"
+        },
+        "max_days": {
+          "type": "integer",
+          "title": "Standard Maximalalter (Tage)",
+          "description": "Standardeinstellung für maximales Alter der Chats in Tagen",
+          "default": 30,
+          "minimum": 1,
+          "maximum": 365
+        }
+      }
     }
   }
 }
