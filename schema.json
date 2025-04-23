@@ -45,6 +45,52 @@
           "maximum": 365
         }
       }
+    },
+    "filter_limits": {
+      "type": "object",
+      "title": "Filter-Limits",
+      "properties": {
+        "max_filters_per_website": {
+          "type": "integer",
+          "title": "Maximale Anzahl an Filtern pro Website",
+          "description": "Beschränkt die Anzahl an Filtern, die pro Website erstellt werden können",
+          "default": 30,
+          "minimum": 5,
+          "maximum": 100
+        }
+      }
+    },
+    "backup_settings": {
+      "type": "object",
+      "title": "Backup-Einstellungen",
+      "properties": {
+        "auto_backup": {
+          "type": "boolean",
+          "title": "Automatisches Backup",
+          "description": "Erstellt automatisch ein Backup aller Filter und Einstellungen",
+          "default": false
+        },
+        "backup_interval_days": {
+          "type": "integer",
+          "title": "Backup-Intervall (Tage)",
+          "description": "Intervall für automatische Backups in Tagen",
+          "default": 7,
+          "minimum": 1,
+          "maximum": 30
+        }
+      }
+    },
+    "notifications": {
+      "type": "object",
+      "title": "Benachrichtigungen",
+      "properties": {
+        "cleanup_summary": {
+          "type": "boolean",
+          "title": "Tägliche Zusammenfassung",
+          "description": "Sendet eine tägliche Zusammenfassung der gelöschten Konversationen",
+          "default": true
+        }
+      }
     }
   }
 }
