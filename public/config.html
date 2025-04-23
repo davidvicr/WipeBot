@@ -1005,6 +1005,21 @@
       box-shadow: 0 0 8px var(--glow-primary);
     }
 
+    /* ======== DEBUG-MODUS INDIKATOR ======== */
+    .debug-indicator {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: rgba(255, 79, 79, 0.8);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      z-index: 9999;
+      box-shadow: 0 0 10px rgba(255, 79, 79, 0.5);
+    }
+
     /* ======== RESPONSIVE ANPASSUNGEN ======== */
     @media (max-width: 768px) {
       .modal-content {
@@ -1068,6 +1083,40 @@
   </style>
 </head>
 <body>
+  <script>
+    // Debug-Modus erkennen (über Header oder URL-Parameter)
+    document.addEventListener('DOMContentLoaded', function() {
+      const debugParam = new URLSearchParams(window.location.search).get('debug');
+      const debugHeader = document.querySelector('meta[name="x-debug-mode"]')?.content;
+      const isDev = window.location.hostname.includes('dev.');
+      const isDebug = debugParam === 'true' || debugHeader === 'true' || isDev;
+      
+      if (isDebug) {
+        // Debug-Indikator erstellen
+        const debugIndicator = document.createElement('div');
+        debugIndicator.className = 'debug-indicator';
+        debugIndicator.textContent = '🐞 DEBUG-MODUS';
+        debugIndicator.style.position = 'fixed';
+        debugIndicator.style.top = '10px';
+        debugIndicator.style.left = '10px';
+        debugIndicator.style.background = 'rgba(255, 50, 50, 0.8)';
+        debugIndicator.style.color = 'white';
+        debugIndicator.style.padding = '4px 8px';
+        debugIndicator.style.borderRadius = '4px';
+        debugIndicator.style.fontSize = '12px';
+        debugIndicator.style.fontWeight = 'bold';
+        debugIndicator.style.zIndex = '9999';
+        
+        document.body.appendChild(debugIndicator);
+        
+        // Plugin-Version mit Debug-Info erweitern
+        const versionInfo = document.getElementById('versionInfo');
+        if (versionInfo) {
+          versionInfo.innerHTML += ' <span style="color: #ff3232;">[DEBUG]</span>';
+        }
+      }
+    });
+  </script>
   <div class="modal-overlay">
     <div class="modal-content">
       <!-- Header mit Roboter-Logo -->
