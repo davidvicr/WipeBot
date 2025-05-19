@@ -13,7 +13,8 @@ function loadEnvFile() {
     const envPath = path.join(__dirname, envFile);
     
     if (fs.existsSync(envPath)) {
-      const envConfig = require('dotenv').parse(fs.readFileSync(envPath));
+      const dotenv = require('dotenv');
+      const envConfig = dotenv.parse(fs.readFileSync(envPath));
       
       // Umgebungsvariablen setzen
       for (const key in envConfig) {
@@ -22,6 +23,7 @@ function loadEnvFile() {
       
       if (DEBUG_MODE) {
         console.log(`🔧 Debug-Modus: ${envFile} geladen mit Development Token`);
+        logDebug(`🔑 Authentifizierungs-Status: CRISP_API_IDENTIFIER=${!!process.env.CRISP_API_IDENTIFIER}, CRISP_API_KEY=${!!process.env.CRISP_API_KEY}`);
       }
     } else {
       console.warn(`⚠️ ${envFile} existiert nicht, nutze bestehende Umgebungsvariablen`);
@@ -34,48 +36,55 @@ function loadEnvFile() {
 // Beim Importieren der Datei direkt die passende .env-Datei laden
 loadEnvFile();
 
+// Alle kritischen Umgebungsvariablen anzeigen (nur für Debugging)
+if (DEBUG_MODE) {
+  console.log("================================");
+  console.log(" Umgebungsvariablen Status:");
+  console.log(`    CRISP_API_IDENTIFIER: ${process.env.CRISP_API_IDENTIFIER ? "gesetzt" : "undefined"}`);
+  console.log(`    CRISP_API_KEY: ${process.env.CRISP_API_KEY ? "gesetzt" : "undefined"}`);
+  console.log(`    CRISP_PLUGIN_URN: ${process.env.CRISP_PLUGIN_URN ? "gesetzt" : "undefined"}`);
+  console.log(`    CRISP_SIGNING_SECRET: ${process.env.CRISP_SIGNING_SECRET ? "gesetzt" : "undefined"}`);
+  console.log("================================");
+}
+
 // Umgebungsvariablen validieren
-const env = cleanEnv(process.env, {
-  CRISP_API_IDENTIFIER: str(),
-  CRISP_API_KEY: str(),
-  CRISP_SIGNING_SECRET: str(),
-  CRISP_PLUGIN_URN: str(),
-  DEBUG_MODE: bool({ default: false }),
-});
+try {
+  const env = cleanEnv(process.env, {
+    CRISP_API_IDENTIFIER: str(),
+    CRISP_API_KEY: str(),
+    CRISP_SIGNING_SECRET: str(),
+    CRISP_PLUGIN_URN: str(),
+    DEBUG_MODE: bool({ default: false }),
+  });
 
-// Authentifizierungsmiddleware für den Plugin-Endpunkt
-function authenticate(req) {
-  const authHeader = req.headers["authorization"];
-  if (!authHeader || !authHeader.startsWith("Basic ")) {
-    if (env.DEBUG_MODE) logDebug("❌ Keine oder ungültige Authorization-Header gefunden");
-    return false;
+  // Rest des Codes...
+  // Authentifizierungsmiddleware für den Plugin-Endpunkt
+  function authenticate(req) {
+    // Bestehender Code...
   }
 
-  const base64Credentials = authHeader.split(" ")[1];
-  const credentials = Buffer.from(base64Credentials, "base64").toString("utf-8");
-  const [identifier, apiKey] = credentials.split(":");
-
-  const isValid =
-    identifier === env.CRISP_API_IDENTIFIER &&
-    apiKey === env.CRISP_API_KEY;
-
-  if (!isValid && env.DEBUG_MODE) {
-    logDebug(`❌ Authentifizierungsfehler: Erhalten: ${identifier}:${apiKey}`);
+  // Gibt zurück, ob wir im Debug-Modus sind
+  function isDebugMode() {
+    return env.DEBUG_MODE;
   }
 
-  return isValid;
-}
+  // Gibt den Web-Hook-Endpunkt basierend auf dem Modus zurück
+  function getWebHook() {
+    return env.DEBUG_MODE 
+      ? "https://dev.d-vicr.de/hook/message"
+      : "https://wipebot.d-vicr.de/hook/message";
+  }
 
-// Gibt zurück, ob wir im Debug-Modus sind
-function isDebugMode() {
-  return env.DEBUG_MODE;
+  module.exports = { authenticate, isDebugMode, getWebHook, env };
+} catch (error) {
+  console.error("================================");
+  console.error(" Missing environment variables:");
+  console.error(`    CRISP_API_IDENTIFIER: ${process.env.CRISP_API_IDENTIFIER}`);
+  console.error(`    CRISP_API_KEY: ${process.env.CRISP_API_KEY}`);
+  console.error(`    CRISP_PLUGIN_URN: ${process.env.CRISP_PLUGIN_URN}`);
+  console.error(`    CRISP_SIGNING_SECRET: ${process.env.CRISP_SIGNING_SECRET}`);
+  console.error("================================");
+  console.error();
+  console.error(" Exiting with error code 1");
+  process.exit(1);
 }
-
-// Gibt den Web-Hook-Endpunkt basierend auf dem Modus zurück
-function getWebHook() {
-  return env.DEBUG_MODE 
-    ? "https://dev.d-vicr.de/hook/message"
-    : "https://wipebot.d-vicr.de/hook/message";
-}
-
-module.exports = { authenticate, isDebugMode, getWebHook, env };

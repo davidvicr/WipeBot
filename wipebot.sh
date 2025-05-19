@@ -6,15 +6,21 @@ case "$1" in
   start)
     echo "🚀 Starte WipeBot Plugin & Cron-Scheduler im Produktionsmodus..."
     cp .env.prod .env
-    pm2 start lib/index.js --name wipebot-server
-    pm2 start cron_scheduler.js --name wipebot-cron
+    pm2 start lib/index.js --name wipebot-server --env production
+    pm2 start cron_scheduler.js --name wipebot-cron --env production
     ;;
 
   "start debug")
     echo "🐞 Starte WipeBot im Debug-Modus..."
     cp .env.dev .env
-    pm2 start lib/index.js --name wipebot-server
-    pm2 start cron_scheduler.js --name wipebot-cron
+    # Umgebungsvariablen direkt aus .env.dev lesen und an PM2 übergeben
+    source .env.dev
+    pm2 start lib/index.js --name wipebot-server \
+      --env development \
+      --env-json '{"DEBUG_MODE":"true","CRISP_API_IDENTIFIER":"'$CRISP_API_IDENTIFIER'","CRISP_API_KEY":"'$CRISP_API_KEY'","CRISP_SIGNING_SECRET":"'$CRISP_SIGNING_SECRET'","CRISP_PLUGIN_URN":"'$CRISP_PLUGIN_URN'"}'
+    pm2 start cron_scheduler.js --name wipebot-cron \
+      --env development \
+      --env-json '{"DEBUG_MODE":"true","CRISP_API_IDENTIFIER":"'$CRISP_API_IDENTIFIER'","CRISP_API_KEY":"'$CRISP_API_KEY'","CRISP_SIGNING_SECRET":"'$CRISP_SIGNING_SECRET'","CRISP_PLUGIN_URN":"'$CRISP_PLUGIN_URN'"}'
     ;;
 
   stop)
