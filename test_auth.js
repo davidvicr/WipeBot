@@ -20,29 +20,10 @@ console.log(`  CRISP_SIGNING_SECRET: ${process.env.CRISP_SIGNING_SECRET ? 'geset
 
 // Authentifizierung
 try {
-  console.log("🔐 Versuche Authentifizierung mit Tier 'plugin'...");
+  console.log("🔐 Versuche Authentifizierung mit neuer Methode...");
   
-  client.authenticateTier("plugin", {
-    identifier: process.env.CRISP_API_IDENTIFIER,
-    key: process.env.CRISP_API_KEY,
-    tiers: ["websites"],
-    version: "1"
-  });
-
-  // Prüfe, ob setHttpHeaders existiert
-  if (typeof client.setHttpHeaders === 'function') {
-    console.log("✅ setHttpHeaders Methode existiert, wird ausgeführt...");
-    
-    // Setze die HTTP-Header explizit
-    client.setHttpHeaders({
-      "X-Crisp-Tier": "plugin",
-      "X-Crisp-API-Identifier": process.env.CRISP_API_IDENTIFIER,
-      "X-Crisp-API-Key": process.env.CRISP_API_KEY
-    });
-  } else {
-    console.log("⚠️ setHttpHeaders Methode existiert nicht in dieser Version der Crisp-API");
-    console.log("📦 Installierte Crisp-API Version:", require("crisp-api/package.json").version);
-  }
+  // Neue Authentifizierungsmethode für Crisp-API v9.10.0
+  client.authenticate(process.env.CRISP_API_IDENTIFIER, process.env.CRISP_API_KEY);
 
   console.log("✅ Authentifizierungskonfiguration erfolgreich");
 } catch (error) {
