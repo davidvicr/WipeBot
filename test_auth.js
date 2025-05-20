@@ -19,14 +19,8 @@ try {
     tiers: ["websites"],
     version: "1"
   });
-
-  // Setze die HTTP-Header explizit
-  client.setHttpHeaders({
-    "X-Crisp-Tier": "plugin",
-    "X-Crisp-API-Identifier": process.env.CRISP_API_IDENTIFIER,
-    "X-Crisp-API-Key": process.env.CRISP_API_KEY
-  });
-
+  // Die Zeile mit setHttpHeaders entfernen, da diese Methode nicht mehr existiert
+  
   console.log("✅ Authentifizierungskonfiguration erfolgreich");
 } catch (error) {
   console.error("❌ Fehler bei der Authentifizierungskonfiguration:", error.message);
