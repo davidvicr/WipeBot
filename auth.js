@@ -137,8 +137,20 @@ try {
 
 // Hilfsfunktionen für die Authentifizierung und Modus-Erkennung
 function authenticate(req) {
-  // Implementierung der Authentifizierungslogik...
-  return true; // Vereinfacht für jetzt
+  // Einfache Authentifizierungsprüfung
+  if (!req || !req.headers) {
+    return false;
+  }
+  
+  // API-Schlüssel aus Header extrahieren
+  const apiKey = req.headers['x-api-key'];
+  
+  // Prüfen, ob der API-Schlüssel vorhanden ist und mit dem konfigurierten Schlüssel übereinstimmt
+  if (!apiKey || apiKey !== process.env.CRISP_API_KEY) {
+    return false;
+  }
+  
+  return true;
 }
 
 function isDebugMode() {
