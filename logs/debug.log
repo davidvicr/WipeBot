@@ -1,192 +1,192 @@
-[2025-05-20T14:26:44.518Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:44.519Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:44.519Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:44.520Z] ================================
-[2025-05-20T14:26:44.520Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:44.520Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:44.520Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:44.520Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:44.521Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:44.521Z]     DEBUG_MODE: true
-[2025-05-20T14:26:44.521Z] ================================
-[2025-05-20T14:26:44.522Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:45.237Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:45.237Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:45.238Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:45.241Z] ================================
-[2025-05-20T14:26:45.241Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:45.241Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:45.241Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:45.241Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:45.241Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:45.242Z]     DEBUG_MODE: true
-[2025-05-20T14:26:45.242Z] ================================
-[2025-05-20T14:26:45.243Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:45.916Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:45.917Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:45.917Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:45.918Z] ================================
-[2025-05-20T14:26:45.919Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:45.919Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:45.919Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:45.919Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:45.919Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:45.919Z]     DEBUG_MODE: true
-[2025-05-20T14:26:45.919Z] ================================
-[2025-05-20T14:26:45.920Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:46.622Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:46.623Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:46.623Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:46.625Z] ================================
-[2025-05-20T14:26:46.625Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:46.625Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:46.625Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:46.625Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:46.626Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:46.626Z]     DEBUG_MODE: true
-[2025-05-20T14:26:46.626Z] ================================
-[2025-05-20T14:26:46.627Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:47.307Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:47.309Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:47.309Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:47.310Z] ================================
-[2025-05-20T14:26:47.311Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:47.311Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:47.311Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:47.311Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:47.311Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:47.311Z]     DEBUG_MODE: true
-[2025-05-20T14:26:47.311Z] ================================
-[2025-05-20T14:26:47.313Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:47.981Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:47.982Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:47.982Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:47.985Z] ================================
-[2025-05-20T14:26:47.986Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:47.986Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:47.986Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:47.986Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:47.986Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:47.986Z]     DEBUG_MODE: true
-[2025-05-20T14:26:47.986Z] ================================
-[2025-05-20T14:26:47.988Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:48.691Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:48.692Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:48.693Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:48.695Z] ================================
-[2025-05-20T14:26:48.695Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:48.695Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:48.695Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:48.695Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:48.695Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:48.696Z]     DEBUG_MODE: true
-[2025-05-20T14:26:48.696Z] ================================
-[2025-05-20T14:26:48.697Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:49.394Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:49.395Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:49.395Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:49.397Z] ================================
-[2025-05-20T14:26:49.397Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:49.398Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:49.398Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:49.398Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:49.398Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:49.398Z]     DEBUG_MODE: true
-[2025-05-20T14:26:49.398Z] ================================
-[2025-05-20T14:26:49.400Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:50.052Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:50.053Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:50.053Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:50.056Z] ================================
-[2025-05-20T14:26:50.056Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:50.057Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:50.057Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:50.057Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:50.057Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:50.057Z]     DEBUG_MODE: true
-[2025-05-20T14:26:50.057Z] ================================
-[2025-05-20T14:26:50.059Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:50.725Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:50.725Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:50.726Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:50.727Z] ================================
-[2025-05-20T14:26:50.728Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:50.728Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:50.728Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:50.728Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:50.728Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:50.728Z]     DEBUG_MODE: true
-[2025-05-20T14:26:50.728Z] ================================
-[2025-05-20T14:26:50.730Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:51.419Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:51.419Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:51.420Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:51.421Z] ================================
-[2025-05-20T14:26:51.421Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:51.421Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:51.421Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:51.421Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:51.422Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:51.422Z]     DEBUG_MODE: true
-[2025-05-20T14:26:51.422Z] ================================
-[2025-05-20T14:26:51.423Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:52.133Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:52.134Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:52.134Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:52.137Z] ================================
-[2025-05-20T14:26:52.137Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:52.137Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:52.137Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:52.137Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:52.138Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:52.138Z]     DEBUG_MODE: true
-[2025-05-20T14:26:52.138Z] ================================
-[2025-05-20T14:26:52.139Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:52.894Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:52.895Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:52.895Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:52.896Z] ================================
-[2025-05-20T14:26:52.896Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:52.896Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:52.896Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:52.896Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:52.897Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:52.897Z]     DEBUG_MODE: true
-[2025-05-20T14:26:52.897Z] ================================
-[2025-05-20T14:26:52.898Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:53.625Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:53.625Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:53.626Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:53.629Z] ================================
-[2025-05-20T14:26:53.629Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:53.629Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:53.630Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:53.630Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:53.630Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:53.630Z]     DEBUG_MODE: true
-[2025-05-20T14:26:53.630Z] ================================
-[2025-05-20T14:26:53.633Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:54.319Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:54.319Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:54.320Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:54.321Z] ================================
-[2025-05-20T14:26:54.321Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:54.321Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:54.321Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:54.321Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:54.322Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:54.322Z]     DEBUG_MODE: true
-[2025-05-20T14:26:54.322Z] ================================
-[2025-05-20T14:26:54.324Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-20T14:26:54.985Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-20T14:26:54.986Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-20T14:26:54.986Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-20T14:26:54.988Z] ================================
-[2025-05-20T14:26:54.988Z]  🔍 Umgebungsvariablen Status:
-[2025-05-20T14:26:54.988Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-20T14:26:54.988Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-20T14:26:54.988Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-20T14:26:54.988Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-20T14:26:54.988Z]     DEBUG_MODE: true
-[2025-05-20T14:26:54.988Z] ================================
-[2025-05-20T14:26:54.990Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:34.841Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:34.842Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:34.842Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:34.844Z] ================================
+[2025-05-20T15:13:34.844Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:34.844Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:34.844Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:34.845Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:34.845Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:34.845Z]     DEBUG_MODE: true
+[2025-05-20T15:13:34.845Z] ================================
+[2025-05-20T15:13:34.851Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:35.547Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:35.547Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:35.548Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:35.550Z] ================================
+[2025-05-20T15:13:35.550Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:35.550Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:35.550Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:35.550Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:35.550Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:35.550Z]     DEBUG_MODE: true
+[2025-05-20T15:13:35.550Z] ================================
+[2025-05-20T15:13:35.553Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:36.285Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:36.286Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:36.286Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:36.288Z] ================================
+[2025-05-20T15:13:36.288Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:36.288Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:36.288Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:36.288Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:36.288Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:36.288Z]     DEBUG_MODE: true
+[2025-05-20T15:13:36.288Z] ================================
+[2025-05-20T15:13:36.290Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:36.944Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:36.945Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:36.945Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:36.947Z] ================================
+[2025-05-20T15:13:36.947Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:36.947Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:36.947Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:36.948Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:36.948Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:36.948Z]     DEBUG_MODE: true
+[2025-05-20T15:13:36.948Z] ================================
+[2025-05-20T15:13:36.949Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:37.637Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:37.638Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:37.638Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:37.639Z] ================================
+[2025-05-20T15:13:37.639Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:37.640Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:37.640Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:37.640Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:37.640Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:37.640Z]     DEBUG_MODE: true
+[2025-05-20T15:13:37.640Z] ================================
+[2025-05-20T15:13:37.642Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:38.333Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:38.333Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:38.334Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:38.336Z] ================================
+[2025-05-20T15:13:38.336Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:38.336Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:38.336Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:38.336Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:38.336Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:38.336Z]     DEBUG_MODE: true
+[2025-05-20T15:13:38.336Z] ================================
+[2025-05-20T15:13:38.337Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:38.970Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:38.971Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:38.971Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:38.973Z] ================================
+[2025-05-20T15:13:38.973Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:38.973Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:38.973Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:38.973Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:38.974Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:38.974Z]     DEBUG_MODE: true
+[2025-05-20T15:13:38.974Z] ================================
+[2025-05-20T15:13:38.975Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:39.651Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:39.652Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:39.652Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:39.654Z] ================================
+[2025-05-20T15:13:39.654Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:39.655Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:39.655Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:39.655Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:39.655Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:39.655Z]     DEBUG_MODE: true
+[2025-05-20T15:13:39.655Z] ================================
+[2025-05-20T15:13:39.657Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:40.301Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:40.302Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:40.302Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:40.304Z] ================================
+[2025-05-20T15:13:40.304Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:40.304Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:40.304Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:40.304Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:40.305Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:40.305Z]     DEBUG_MODE: true
+[2025-05-20T15:13:40.305Z] ================================
+[2025-05-20T15:13:40.307Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:41.016Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:41.017Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:41.017Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:41.019Z] ================================
+[2025-05-20T15:13:41.019Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:41.019Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:41.019Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:41.019Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:41.020Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:41.020Z]     DEBUG_MODE: true
+[2025-05-20T15:13:41.020Z] ================================
+[2025-05-20T15:13:41.022Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:41.774Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:41.775Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:41.775Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:41.776Z] ================================
+[2025-05-20T15:13:41.776Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:41.776Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:41.777Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:41.777Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:41.777Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:41.777Z]     DEBUG_MODE: true
+[2025-05-20T15:13:41.777Z] ================================
+[2025-05-20T15:13:41.778Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:42.505Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:42.506Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:42.506Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:42.507Z] ================================
+[2025-05-20T15:13:42.507Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:42.507Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:42.507Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:42.507Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:42.508Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:42.508Z]     DEBUG_MODE: true
+[2025-05-20T15:13:42.508Z] ================================
+[2025-05-20T15:13:42.510Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:43.225Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:43.225Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:43.226Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:43.229Z] ================================
+[2025-05-20T15:13:43.229Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:43.229Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:43.230Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:43.230Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:43.231Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:43.231Z]     DEBUG_MODE: true
+[2025-05-20T15:13:43.231Z] ================================
+[2025-05-20T15:13:43.232Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:44.018Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:44.019Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:44.019Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:44.023Z] ================================
+[2025-05-20T15:13:44.023Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:44.023Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:44.023Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:44.023Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:44.023Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:44.023Z]     DEBUG_MODE: true
+[2025-05-20T15:13:44.024Z] ================================
+[2025-05-20T15:13:44.025Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:44.714Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:44.715Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:44.715Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:44.716Z] ================================
+[2025-05-20T15:13:44.716Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:44.716Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:44.716Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:44.717Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:44.717Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:44.717Z]     DEBUG_MODE: true
+[2025-05-20T15:13:44.717Z] ================================
+[2025-05-20T15:13:44.718Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-20T15:13:45.388Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
+[2025-05-20T15:13:45.389Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
+[2025-05-20T15:13:45.389Z] ✅ CRISP-API-Credentials erfolgreich geladen
+[2025-05-20T15:13:45.391Z] ================================
+[2025-05-20T15:13:45.391Z]  🔍 Umgebungsvariablen Status:
+[2025-05-20T15:13:45.391Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
+[2025-05-20T15:13:45.391Z]     CRISP_API_KEY: ✅ gesetzt
+[2025-05-20T15:13:45.391Z]     CRISP_PLUGIN_URN: ✅ gesetzt
+[2025-05-20T15:13:45.392Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
+[2025-05-20T15:13:45.392Z]     DEBUG_MODE: true
+[2025-05-20T15:13:45.392Z] ================================
+[2025-05-20T15:13:45.393Z] ✅ Umgebungsvariablen erfolgreich validiert
