@@ -43,9 +43,9 @@ WipeBot ist ein spezialisiertes Crisp-Plugin zur automatisierten Verwaltung von 
 - **Plugin-URN**: urn:david.crump:wipebot:0
 
 **Development Token**:
-- Identifier: 3e87afc3-8358-435a-891a-bed3ed3b26a5
-- Key: b39249c93354d6e2ce2f1eacf4b1485b0aaa9a2590aa1cd867358b4a8088944c
-- Signing Secret: bd1ea0723190b0150c460eb98dc68d70
+- Identifier: f8ba1524-7b28-419f-9585-6682ae0ccbb4
+- Key: dadf8fd2aee4ea561f5c3ac5867d3d4c3271cc9c044215334e13b16bae18e8e1
+- Signing Secret: 7ea6d546a07a3332a0cabdb3dd91ee6f
 - Web Hook: https://dev.d-vicr.de/hook/message
 
 **Production Token**:
