@@ -1,0 +1,83 @@
+[2025-05-23T10:34:48.233Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T10:34:48.438Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T10:34:48.441Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T10:34:48.441Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T10:34:48.441Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T10:34:48.454Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T10:34:48.457Z] 🐞 STARTUP: Debug-Modus ist AKTIV (aus auth.js: true)
+[2025-05-23T10:34:48.457Z] 🔑 API Credentials: ID=vorhanden, KEY=vorhanden
+[2025-05-23T10:34:48.467Z] 🚦 REST-API-Endpunkte erfolgreich eingerichtet
+[2025-05-23T10:34:48.475Z] 🚀 WipeBot v1.0.0 gestartet auf Port 1234 (0.0.0.0)
+[2025-05-23T10:34:48.475Z] 🔧 Modus: DEBUG
+[2025-05-23T10:34:48.475Z] 🌐 Dashboard: https://dev.d-vicr.de/dashboard
+[2025-05-23T10:34:48.475Z] 🔗 Webhook: https://dev.d-vicr.de/hook/message
+[2025-05-23T10:34:48.477Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
+[2025-05-23T10:34:49.473Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T10:34:49.487Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T10:34:49.490Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T10:34:49.490Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T10:34:49.491Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T10:34:49.495Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T10:34:49.495Z] 🚀 Cron-Scheduler wird initialisiert
+[2025-05-23T10:34:49.496Z] 📋 0 aktive Filter für Website 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 geladen
+[2025-05-23T10:34:49.508Z] 🔄 Täglicher Wartungs-Job um 3:30 Uhr geplant
+[2025-05-23T10:34:49.508Z] ✅ Scheduler erfolgreich gestartet mit 1 Jobs
+[2025-05-23T10:34:49.510Z] 👀 Überwachung der Konfigurationsdatei aktiviert
+[2025-05-23T10:34:49.510Z] 🐞 Scheduler im DEBUG-Modus gestartet
+[2025-05-23T10:34:49.514Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
+[2025-05-23T10:34:56.998Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
+[2025-05-23T10:34:56.998Z] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
+[2025-05-23T10:34:56.998Z] 📩 Webhook empfangen: "ping" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_a3368e83-7f86-4e40-860c-829fe9bc0daa, from=operator)
+[2025-05-23T10:34:56.998Z] 🔧 Verarbeite Trigger: "ping" mit Argumenten: []
+[2025-05-23T10:34:56.999Z] 🔧 Debug-Trigger empfangen: ping 
+[2025-05-23T10:34:56.999Z] 🏓 Ping-Befehl empfangen
+[2025-05-23T10:34:57.000Z] 📤 Sende Nachricht an session_a3368e83-7f86-4e40-860c-829fe9bc0daa: pong
+[2025-05-23T10:34:57.003Z] 🔄 API-Anfrage: POST website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_a3368e83-7f86-4e40-860c-829fe9bc0daa/message
+[2025-05-23T10:34:57.163Z] ❌ API-Fehler: 400 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_a3368e83-7f86-4e40-860c-829fe9bc0daa/message
+[2025-05-23T10:34:57.163Z] 📝 API-Fehler-Details: {"error":true,"reason":"invalid_data","data":{"namespace":"data","message":"data.origin should match pattern \"^(chat|email|(urn:(.+)))$\""}}
+[2025-05-23T10:34:57.164Z] ❌ Fehler beim Senden der Nachricht: Request failed with status code 400
+[2025-05-23T10:34:57.165Z] 📤 Antwort gesendet: pong
+[2025-05-23T10:34:57.165Z] ✅ Trigger "ping" erfolgreich verarbeitet
+[2025-05-23T10:35:04.857Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
+[2025-05-23T10:35:04.960Z] ❌ API-Fehler: 404 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
+[2025-05-23T10:35:04.961Z] 📝 API-Fehler-Details: {"error":true,"reason":"not_found","data":{"message":"the route does not exist"}}
+[2025-05-23T10:35:04.962Z] ❌ Fehler beim Laden der Website-Plugins: Request failed with status code 404
+[2025-05-23T10:35:05.012Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":1,"page_size":100}
+[2025-05-23T10:35:05.013Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:05.441Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":2,"page_size":100}
+[2025-05-23T10:35:05.442Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:05.858Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":3,"page_size":100}
+[2025-05-23T10:35:05.859Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:06.277Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":4,"page_size":100}
+[2025-05-23T10:35:06.278Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:06.689Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":5,"page_size":100}
+[2025-05-23T10:35:06.690Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:07.313Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":6,"page_size":100}
+[2025-05-23T10:35:07.314Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:07.714Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":7,"page_size":100}
+[2025-05-23T10:35:07.715Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:08.126Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":8,"page_size":100}
+[2025-05-23T10:35:08.127Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:08.527Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":9,"page_size":100}
+[2025-05-23T10:35:08.528Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:08.939Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":10,"page_size":100}
+[2025-05-23T10:35:08.939Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:09.357Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":11,"page_size":100}
+[2025-05-23T10:35:09.358Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:09.525Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[-689124809],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8"
+[2025-05-23T10:35:09.525Z] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
+[2025-05-23T10:35:09.525Z] ⏭️ Ignoriertes Event: message:acknowledge:read:received
+[2025-05-23T10:35:09.761Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":12,"page_size":100}
+[2025-05-23T10:35:09.761Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:10.155Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":13,"page_size":100}
+[2025-05-23T10:35:10.155Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:10.572Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":14,"page_size":100}
+[2025-05-23T10:35:10.573Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:10.994Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":15,"page_size":100}
+[2025-05-23T10:35:10.995Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:11.390Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":16,"page_size":100}
+[2025-05-23T10:35:11.391Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:11.797Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":17,"page_size":100}
+[2025-05-23T10:35:11.798Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:35:12.225Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":18,"page_size":100}
+[2025-05-23T10:35:12.226Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
