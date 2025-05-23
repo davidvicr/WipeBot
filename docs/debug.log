@@ -1,204 +1,156 @@
-[2025-05-22T12:08:05.324Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:05.325Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:05.325Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:05.326Z] ================================
-[2025-05-22T12:08:05.326Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:05.326Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:05.326Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:05.327Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:05.327Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:05.327Z]     DEBUG_MODE: true
-[2025-05-22T12:08:05.327Z] ================================
-[2025-05-22T12:08:05.328Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:06.024Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:06.025Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:06.025Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:06.027Z] ================================
-[2025-05-22T12:08:06.027Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:06.027Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:06.027Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:06.027Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:06.027Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:06.028Z]     DEBUG_MODE: true
-[2025-05-22T12:08:06.028Z] ================================
-[2025-05-22T12:08:06.029Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:06.762Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:06.763Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:06.763Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:06.767Z] ================================
-[2025-05-22T12:08:06.767Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:06.767Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:06.767Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:06.767Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:06.768Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:06.768Z]     DEBUG_MODE: true
-[2025-05-22T12:08:06.768Z] ================================
-[2025-05-22T12:08:06.769Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:07.512Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:07.512Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:07.513Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:07.514Z] ================================
-[2025-05-22T12:08:07.515Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:07.515Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:07.515Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:07.515Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:07.515Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:07.516Z]     DEBUG_MODE: true
-[2025-05-22T12:08:07.516Z] ================================
-[2025-05-22T12:08:07.517Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:08.179Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:08.180Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:08.180Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:08.182Z] ================================
-[2025-05-22T12:08:08.182Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:08.182Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:08.183Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:08.183Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:08.183Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:08.184Z]     DEBUG_MODE: true
-[2025-05-22T12:08:08.184Z] ================================
-[2025-05-22T12:08:08.186Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:08.897Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:08.898Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:08.898Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:08.901Z] ================================
-[2025-05-22T12:08:08.902Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:08.902Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:08.902Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:08.902Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:08.902Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:08.902Z]     DEBUG_MODE: true
-[2025-05-22T12:08:08.902Z] ================================
-[2025-05-22T12:08:08.904Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:09.637Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:09.638Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:09.638Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:09.641Z] ================================
-[2025-05-22T12:08:09.641Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:09.641Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:09.641Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:09.642Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:09.642Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:09.642Z]     DEBUG_MODE: true
-[2025-05-22T12:08:09.642Z] ================================
-[2025-05-22T12:08:09.645Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:10.810Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:10.811Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:10.811Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:10.812Z] ================================
-[2025-05-22T12:08:10.812Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:10.812Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:10.812Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:10.813Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:10.813Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:10.813Z]     DEBUG_MODE: true
-[2025-05-22T12:08:10.814Z] ================================
-[2025-05-22T12:08:10.818Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:11.603Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:11.604Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:11.604Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:11.606Z] ================================
-[2025-05-22T12:08:11.606Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:11.606Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:11.606Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:11.606Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:11.606Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:11.606Z]     DEBUG_MODE: true
-[2025-05-22T12:08:11.607Z] ================================
-[2025-05-22T12:08:11.608Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:12.353Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:12.354Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:12.354Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:12.356Z] ================================
-[2025-05-22T12:08:12.356Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:12.356Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:12.356Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:12.356Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:12.356Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:12.356Z]     DEBUG_MODE: true
-[2025-05-22T12:08:12.356Z] ================================
-[2025-05-22T12:08:12.358Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:13.162Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:13.163Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:13.163Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:13.165Z] ================================
-[2025-05-22T12:08:13.165Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:13.165Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:13.166Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:13.166Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:13.166Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:13.166Z]     DEBUG_MODE: true
-[2025-05-22T12:08:13.166Z] ================================
-[2025-05-22T12:08:13.168Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:13.897Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:13.898Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:13.898Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:13.899Z] ================================
-[2025-05-22T12:08:13.899Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:13.899Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:13.899Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:13.899Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:13.900Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:13.900Z]     DEBUG_MODE: true
-[2025-05-22T12:08:13.900Z] ================================
-[2025-05-22T12:08:13.902Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:14.576Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:14.577Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:14.577Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:14.580Z] ================================
-[2025-05-22T12:08:14.580Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:14.580Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:14.580Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:14.580Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:14.580Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:14.580Z]     DEBUG_MODE: true
-[2025-05-22T12:08:14.580Z] ================================
-[2025-05-22T12:08:14.582Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:15.193Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:15.194Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:15.194Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:15.195Z] ================================
-[2025-05-22T12:08:15.196Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:15.196Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:15.196Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:15.196Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:15.196Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:15.196Z]     DEBUG_MODE: true
-[2025-05-22T12:08:15.196Z] ================================
-[2025-05-22T12:08:15.198Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:15.834Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:15.835Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:15.835Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:15.837Z] ================================
-[2025-05-22T12:08:15.837Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:15.837Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:15.837Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:15.837Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:15.837Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:15.837Z]     DEBUG_MODE: true
-[2025-05-22T12:08:15.837Z] ================================
-[2025-05-22T12:08:15.839Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:16.462Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:16.463Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:16.463Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:16.464Z] ================================
-[2025-05-22T12:08:16.465Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:16.465Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:16.465Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:16.465Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:16.465Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:16.465Z]     DEBUG_MODE: true
-[2025-05-22T12:08:16.465Z] ================================
-[2025-05-22T12:08:16.466Z] ✅ Umgebungsvariablen erfolgreich validiert
-[2025-05-22T12:08:17.062Z] 🔧 Debug-Modus: .env.dev geladen mit Development Token
-[2025-05-22T12:08:17.063Z] 🔑 Crisp-API-Credentials: IDENTIFIER=true, KEY=true
-[2025-05-22T12:08:17.063Z] ✅ CRISP-API-Credentials erfolgreich geladen
-[2025-05-22T12:08:17.064Z] ================================
-[2025-05-22T12:08:17.064Z]  🔍 Umgebungsvariablen Status:
-[2025-05-22T12:08:17.064Z]     CRISP_API_IDENTIFIER: ✅ gesetzt
-[2025-05-22T12:08:17.064Z]     CRISP_API_KEY: ✅ gesetzt
-[2025-05-22T12:08:17.064Z]     CRISP_PLUGIN_URN: ✅ gesetzt
-[2025-05-22T12:08:17.065Z]     CRISP_SIGNING_SECRET: ✅ gesetzt
-[2025-05-22T12:08:17.065Z]     DEBUG_MODE: true
-[2025-05-22T12:08:17.065Z] ================================
-[2025-05-22T12:08:17.066Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T08:54:46.615Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T08:54:46.842Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T08:54:46.844Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T08:54:46.845Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T08:54:46.845Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T08:54:46.858Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T08:54:46.859Z] 🐞 STARTUP: Debug-Modus ist AKTIV (aus auth.js: true)
+[2025-05-23T08:54:46.859Z] 🔑 API Credentials: ID=vorhanden, KEY=vorhanden
+[2025-05-23T08:54:46.867Z] 🚦 REST-API-Endpunkte erfolgreich eingerichtet
+[2025-05-23T08:54:46.874Z] 🚀 WipeBot v1.0.0 gestartet auf Port 1234 (0.0.0.0)
+[2025-05-23T08:54:46.874Z] 🔧 Modus: DEBUG
+[2025-05-23T08:54:46.874Z] 🌐 Dashboard: https://dev.d-vicr.de/dashboard
+[2025-05-23T08:54:46.874Z] 🔗 Webhook: https://dev.d-vicr.de/hook/message
+[2025-05-23T08:54:46.876Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
+[2025-05-23T08:54:47.797Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T08:54:47.812Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T08:54:47.815Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T08:54:47.815Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T08:54:47.816Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T08:54:47.819Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T08:54:47.820Z] 🚀 Cron-Scheduler wird initialisiert
+[2025-05-23T08:54:47.820Z] 📋 0 aktive Filter für Website 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 geladen
+[2025-05-23T08:54:47.829Z] 🔄 Täglicher Wartungs-Job um 3:30 Uhr geplant
+[2025-05-23T08:54:47.830Z] ✅ Scheduler erfolgreich gestartet mit 1 Jobs
+[2025-05-23T08:54:47.831Z] 👀 Überwachung der Konfigurationsdatei aktiviert
+[2025-05-23T08:54:47.831Z] 🐞 Scheduler im DEBUG-Modus gestartet
+[2025-05-23T08:54:47.833Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
+[2025-05-23T08:54:51.229Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
+[2025-05-23T08:54:51.415Z] ❌ API-Fehler: 404 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
+[2025-05-23T08:54:51.415Z] 📝 API-Fehler-Details: {"error":true,"reason":"not_found","data":{"message":"the route does not exist"}}
+[2025-05-23T08:54:51.417Z] ❌ Fehler beim Laden der Website-Plugins: Request failed with status code 404
+[2025-05-23T08:54:51.462Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":1,"page_size":100}
+[2025-05-23T08:54:51.463Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:51.889Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":2,"page_size":100}
+[2025-05-23T08:54:51.890Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:52.291Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":3,"page_size":100}
+[2025-05-23T08:54:52.292Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:52.703Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":4,"page_size":100}
+[2025-05-23T08:54:52.704Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:53.105Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":5,"page_size":100}
+[2025-05-23T08:54:53.106Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:53.512Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":6,"page_size":100}
+[2025-05-23T08:54:53.512Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:53.905Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":7,"page_size":100}
+[2025-05-23T08:54:53.905Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:54.286Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":8,"page_size":100}
+[2025-05-23T08:54:54.287Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:54.701Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":9,"page_size":100}
+[2025-05-23T08:54:54.702Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:55.106Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":10,"page_size":100}
+[2025-05-23T08:54:55.107Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:55.534Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":11,"page_size":100}
+[2025-05-23T08:54:55.535Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:55.949Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":12,"page_size":100}
+[2025-05-23T08:54:55.950Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:56.368Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":13,"page_size":100}
+[2025-05-23T08:54:56.369Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:56.782Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":14,"page_size":100}
+[2025-05-23T08:54:56.782Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:57.175Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":15,"page_size":100}
+[2025-05-23T08:54:57.175Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:57.568Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":16,"page_size":100}
+[2025-05-23T08:54:57.569Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:57.963Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":17,"page_size":100}
+[2025-05-23T08:54:57.964Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:58.371Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":18,"page_size":100}
+[2025-05-23T08:54:58.372Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:58.780Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":19,"page_size":100}
+[2025-05-23T08:54:58.781Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:59.194Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":20,"page_size":100}
+[2025-05-23T08:54:59.195Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:59.598Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":21,"page_size":100}
+[2025-05-23T08:54:59.598Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:54:59.993Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":22,"page_size":100}
+[2025-05-23T08:54:59.993Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:00.432Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":23,"page_size":100}
+[2025-05-23T08:55:00.432Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:00.858Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":24,"page_size":100}
+[2025-05-23T08:55:00.858Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:01.264Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":25,"page_size":100}
+[2025-05-23T08:55:01.265Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:01.665Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":26,"page_size":100}
+[2025-05-23T08:55:01.666Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:02.145Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":27,"page_size":100}
+[2025-05-23T08:55:02.146Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:02.593Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":28,"page_size":100}
+[2025-05-23T08:55:02.594Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:03.025Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":29,"page_size":100}
+[2025-05-23T08:55:03.026Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:03.473Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":30,"page_size":100}
+[2025-05-23T08:55:03.474Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:03.933Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa
+[2025-05-23T08:55:03.935Z] ⚠️ Webhook mit ungültiger Signatur abgelehnt
+[2025-05-23T08:55:03.937Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":31,"page_size":100}
+[2025-05-23T08:55:03.937Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:04.027Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa
+[2025-05-23T08:55:04.028Z] ⚠️ Webhook mit ungültiger Signatur abgelehnt
+[2025-05-23T08:55:04.349Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":32,"page_size":100}
+[2025-05-23T08:55:04.350Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:04.780Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":33,"page_size":100}
+[2025-05-23T08:55:04.781Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:05.191Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":34,"page_size":100}
+[2025-05-23T08:55:05.191Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:05.590Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":35,"page_size":100}
+[2025-05-23T08:55:05.590Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:06.007Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":36,"page_size":100}
+[2025-05-23T08:55:06.008Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:06.512Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":37,"page_size":100}
+[2025-05-23T08:55:06.516Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:06.928Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":38,"page_size":100}
+[2025-05-23T08:55:06.928Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:07.342Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":39,"page_size":100}
+[2025-05-23T08:55:07.342Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:07.763Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":40,"page_size":100}
+[2025-05-23T08:55:07.763Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:07.999Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
+[2025-05-23T08:55:08.000Z] ⚠️ Webhook mit ungültiger Signatur abgelehnt
+[2025-05-23T08:55:08.152Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":41,"page_size":100}
+[2025-05-23T08:55:08.152Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:08.561Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":42,"page_size":100}
+[2025-05-23T08:55:08.561Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:08.892Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa
+[2025-05-23T08:55:08.892Z] ⚠️ Webhook mit ungültiger Signatur abgelehnt
+[2025-05-23T08:55:08.946Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":43,"page_size":100}
+[2025-05-23T08:55:08.946Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:09.014Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa
+[2025-05-23T08:55:09.015Z] ⚠️ Webhook mit ungültiger Signatur abgelehnt
+[2025-05-23T08:55:09.343Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":44,"page_size":100}
+[2025-05-23T08:55:09.343Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:09.756Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":45,"page_size":100}
+[2025-05-23T08:55:09.757Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:10.144Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":46,"page_size":100}
+[2025-05-23T08:55:10.144Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:10.539Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":47,"page_size":100}
+[2025-05-23T08:55:10.539Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:10.946Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":48,"page_size":100}
+[2025-05-23T08:55:10.947Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:11.355Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":49,"page_size":100}
+[2025-05-23T08:55:11.355Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:11.763Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":50,"page_size":100}
+[2025-05-23T08:55:11.763Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:12.169Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":51,"page_size":100}
+[2025-05-23T08:55:12.170Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:12.581Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":52,"page_size":100}
+[2025-05-23T08:55:12.581Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:12.986Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":53,"page_size":100}
+[2025-05-23T08:55:12.988Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:12.997Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
+[2025-05-23T08:55:12.998Z] ⚠️ Webhook mit ungültiger Signatur abgelehnt
+[2025-05-23T08:55:13.394Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":54,"page_size":100}
+[2025-05-23T08:55:13.394Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:13.798Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":55,"page_size":100}
+[2025-05-23T08:55:13.799Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T08:55:13.868Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa
+[2025-05-23T08:55:13.868Z] ⚠️ Webhook mit ungültiger Signatur abgelehnt
+[2025-05-23T08:55:14.263Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":56,"page_size":100}
