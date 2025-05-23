@@ -1,0 +1,357 @@
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================
+INITIAL DEBUG_MODE DETECTION: true
+Versuche .env-Datei zu laden: /opt/crisp-plugins/wipebot/.env.dev
+.env.dev gefunden, lade Umgebungsvariablen...
+Geladene Umgebungsvariablen: {
+  CRISP_PLUGIN_URN: 'urn:david.crump:wipebot:0',
+  CRISP_API_IDENTIFIER: 'f8ba1...',
+  CRISP_API_KEY: 'dadf8...',
+  CRISP_SIGNING_SECRET: '7ea6d546a07a3332a0cabdb3dd91ee6f',
+  DEBUG_MODE: 'true'
+}
+DEBUG_MODE nach Laden der .env-Datei: true
+🔧 Debug-Modus: .env.dev geladen für Debug-Modus mit Development Token
+✅ CRISP-API-Credentials erfolgreich geladen
+================================
+ 🔍 Umgebungsvariablen Status:
+    CRISP_API_IDENTIFIER: ✅ gesetzt
+    CRISP_API_KEY: ✅ gesetzt
+    CRISP_PLUGIN_URN: ✅ gesetzt
+    CRISP_SIGNING_SECRET: ✅ gesetzt
+    DEBUG_MODE: true
+================================

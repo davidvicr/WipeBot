@@ -1,0 +1,73 @@
+server {
+    listen 80;
+    server_name dev.d-vicr.de;
+
+    # Weiterleitung auf HTTPS (optional aber empfohlen)
+    # return 301 https://$host$request_uri;
+
+    # Zugriff auf Root-Pfad
+    location / {
+        proxy_pass http://localhost:1234/;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Debug-Webhook
+    location /hook/message {
+        proxy_pass http://localhost:1234/hook/message;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Widget-Weiterleitung
+    location /widget {
+        proxy_pass http://localhost:1234/widget;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Statische Dateien
+    location /public {
+        proxy_pass http://localhost:1234/public;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_buffering off;
+    }
+
+    # Dashboard-Zugriff
+    location /dashboard {
+        proxy_pass http://localhost:1234/dashboard;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # API-Endpunkte
+    location /api {
+        proxy_pass http://localhost:1234/api;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # Erhöhte Timeouts für länger laufende Anfragen
+    proxy_connect_timeout 120;
+    proxy_send_timeout 120;
+    proxy_read_timeout 120;
+}

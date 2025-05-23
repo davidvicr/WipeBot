@@ -1,0 +1,15 @@
+# Default server configuration
+# (Nur für Anfragen, die nicht zu den konfigurierten Domains gehören)
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+
+    # Einfache Fallback-Seite
+    root /var/www/html;
+    index index.html index.htm index.nginx-debian.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
