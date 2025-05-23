@@ -1,9 +1,0 @@
-Lade Umgebungsvariablen aus: /opt/crisp-plugins/wipebot/.env.dev
-================================
- 🔍 Umgebungsvariablen Status:
-    CRISP_API_IDENTIFIER: ✅ gesetzt
-    CRISP_API_KEY: ✅ gesetzt
-    CRISP_PLUGIN_URN: ✅ gesetzt
-    CRISP_SIGNING_SECRET: ✅ gesetzt
-    DEBUG_MODE: true
-================================
