@@ -1,6 +1,8 @@
 node_modules
 .idea
 node_modules/
+logs/daily/*
+logs/archive/*
 *.bak
 *.zip
 *.tar
