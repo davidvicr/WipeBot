@@ -1,0 +1,27 @@
+[2025-05-23T10:10:17.183Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T10:10:17.391Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T10:10:17.393Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T10:10:17.394Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T10:10:17.394Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T10:10:17.407Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T10:10:17.409Z] 🐞 STARTUP: Debug-Modus ist AKTIV (aus auth.js: true)
+[2025-05-23T10:10:17.409Z] 🔑 API Credentials: ID=vorhanden, KEY=vorhanden
+[2025-05-23T10:10:17.416Z] 🚦 REST-API-Endpunkte erfolgreich eingerichtet
+[2025-05-23T10:10:17.423Z] 🚀 WipeBot v1.0.0 gestartet auf Port 1234 (0.0.0.0)
+[2025-05-23T10:10:17.423Z] 🔧 Modus: DEBUG
+[2025-05-23T10:10:17.423Z] 🌐 Dashboard: https://dev.d-vicr.de/dashboard
+[2025-05-23T10:10:17.423Z] 🔗 Webhook: https://dev.d-vicr.de/hook/message
+[2025-05-23T10:10:17.425Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
+[2025-05-23T10:10:18.343Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T10:10:18.355Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T10:10:18.357Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T10:10:18.357Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T10:10:18.358Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T10:10:18.362Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T10:10:18.362Z] 🚀 Cron-Scheduler wird initialisiert
+[2025-05-23T10:10:18.363Z] 📋 0 aktive Filter für Website 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 geladen
+[2025-05-23T10:10:18.371Z] 🔄 Täglicher Wartungs-Job um 3:30 Uhr geplant
+[2025-05-23T10:10:18.371Z] ✅ Scheduler erfolgreich gestartet mit 1 Jobs
+[2025-05-23T10:10:18.373Z] 👀 Überwachung der Konfigurationsdatei aktiviert
+[2025-05-23T10:10:18.373Z] 🐞 Scheduler im DEBUG-Modus gestartet
+[2025-05-23T10:10:18.376Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
