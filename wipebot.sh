@@ -57,25 +57,51 @@ wipebot-clear-log() {
     echo "✅ Log-Bereinigung abgeschlossen"
 }
 
-# Kommando-Verarbeitung
-case "$1" in
-  start)
+# Erkenne, wie das Skript aufgerufen wurde (direkt oder über Symlink)
+SCRIPT_NAME=$(basename "$0")
+
+# Kommando-Verarbeitung - prüfe zuerst den Skript-Namen, dann Parameter
+case "$SCRIPT_NAME" in
+  wipebot-start)
     wipebot-start
     ;;
-  start-debug)
+  wipebot-start-debug)
     wipebot-start-debug
     ;;
-  stop)
+  wipebot-stop)
     wipebot-stop
     ;;
-  clear-log)
+  wipebot-clear-log)
     wipebot-clear-log
     ;;
   *)
-    echo "❓ Nutzung:"
-    echo "  ./wipebot.sh start         → Plugin starten (Production-Modus mit .env.prod)"
-    echo "  ./wipebot.sh start-debug   → Plugin im Debug-Modus starten (mit .env.dev)"
-    echo "  ./wipebot.sh stop          → Plugin stoppen"
-    echo "  ./wipebot.sh clear-log     → Log-Dateien (debug.log & api.log) löschen"
+    # Fallback auf Parameter-basierte Verarbeitung (für direkten Aufruf ./wipebot.sh)
+    case "$1" in
+      start)
+        wipebot-start
+        ;;
+      start-debug)
+        wipebot-start-debug
+        ;;
+      stop)
+        wipebot-stop
+        ;;
+      clear-log)
+        wipebot-clear-log
+        ;;
+      *)
+        echo "❓ Nutzung:"
+        echo "  ./wipebot.sh start         → Plugin starten (Production-Modus mit .env.prod)"
+        echo "  ./wipebot.sh start-debug   → Plugin im Debug-Modus starten (mit .env.dev)"
+        echo "  ./wipebot.sh stop          → Plugin stoppen"
+        echo "  ./wipebot.sh clear-log     → Log-Dateien (debug.log & api.log) löschen"
+        echo ""
+        echo "  Oder verwende die Symlink-Befehle:"
+        echo "  wipebot-start              → Plugin starten (Production)"
+        echo "  wipebot-start-debug        → Plugin starten (Debug)"
+        echo "  wipebot-stop               → Plugin stoppen"
+        echo "  wipebot-clear-log          → Log-Dateien löschen"
+        ;;
+    esac
     ;;
 esac
