@@ -1,15 +1,12 @@
-[2025-05-23T12:11:16.263Z] [DEBUG] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T12:11:15.204Z] [API-INFO] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T12:11:15.206Z] [API-INFO] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T12:11:15.207Z] [API-INFO] 🔌 Crisp API Client initialisiert
+[2025-05-23T12:11:15.207Z] [API-ERROR] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T12:11:15.237Z] [API-WARN] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
 [2025-05-23T12:11:16.277Z] [API-INFO] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
 [2025-05-23T12:11:16.279Z] [API-INFO] ✅ Axios-Instance mit Basic Auth konfiguriert
 [2025-05-23T12:11:16.279Z] [API-INFO] 🔌 Crisp API Client initialisiert
 [2025-05-23T12:11:16.279Z] [API-ERROR] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
-[2025-05-23T12:11:16.283Z] [DEBUG] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
-[2025-05-23T12:11:16.283Z] [DEBUG] 🚀 Cron-Scheduler wird initialisiert
-[2025-05-23T12:11:16.284Z] [DEBUG] 📋 0 aktive Filter für Website 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 geladen
-[2025-05-23T12:11:16.292Z] [DEBUG] 🔄 Täglicher Wartungs-Job um 3:30 Uhr geplant
-[2025-05-23T12:11:16.292Z] [DEBUG] ✅ Scheduler erfolgreich gestartet mit 1 Jobs
-[2025-05-23T12:11:16.293Z] [DEBUG] 👀 Überwachung der Konfigurationsdatei aktiviert
-[2025-05-23T12:11:16.293Z] [DEBUG] 🐞 Scheduler im DEBUG-Modus gestartet
 [2025-05-23T12:11:16.295Z] [API-WARN] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
 [2025-05-23T12:11:57.906Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
 [2025-05-23T12:11:58.075Z] [API-ERROR] ❌ API-Fehler: 404 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
@@ -265,24 +262,12 @@
 [2025-05-23T12:13:04.055Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:04.112Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:04.398Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:13:04.426Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
-[2025-05-23T12:13:04.426Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:13:04.427Z] [DEBUG] 📩 Webhook empfangen: "ping" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_a3368e83-7f86-4e40-860c-829fe9bc0daa, from=operator)
-[2025-05-23T12:13:04.427Z] [DEBUG] 🔧 Verarbeite Trigger: "ping" mit Argumenten: []
-[2025-05-23T12:13:04.427Z] [DEBUG] 🔧 Debug-Trigger empfangen: ping 
-[2025-05-23T12:13:04.427Z] [DEBUG] 🏓 Ping-Befehl empfangen
 [2025-05-23T12:13:04.428Z] [API-DEBUG] 📤 Sende Nachricht an session_a3368e83-7f86-4e40-860c-829fe9bc0daa: pong
 [2025-05-23T12:13:04.429Z] [API-DEBUG] 🔄 API-Anfrage: POST website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_a3368e83-7f86-4e40-860c-829fe9bc0daa/message
 [2025-05-23T12:13:04.448Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:04.512Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 90
 [2025-05-23T12:13:04.513Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:04.525Z] [API-DEBUG] ✅ API-Erfolg: 202 - website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_a3368e83-7f86-4e40-860c-829fe9bc0daa/message
-[2025-05-23T12:13:04.525Z] [DEBUG] 📤 Antwort gesendet: pong
-[2025-05-23T12:13:04.525Z] [DEBUG] ✅ Trigger "ping" erfolgreich verarbeitet
-[2025-05-23T12:13:04.595Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:david.crump:wi
-[2025-05-23T12:13:04.595Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:13:04.595Z] [DEBUG] 📩 Webhook empfangen: "pong" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_a3368e83-7f86-4e40-860c-829fe9bc0daa, from=operator)
-[2025-05-23T12:13:04.596Z] [DEBUG] ❌ Ungültiger Trigger: "pong"
 [2025-05-23T12:13:04.835Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:04.876Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:04.920Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -302,12 +287,6 @@
 [2025-05-23T12:13:06.864Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:06.947Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:06.952Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:13:07.176Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"h
-[2025-05-23T12:13:07.176Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:13:07.176Z] [DEBUG] 📩 Webhook empfangen: "help" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_a3368e83-7f86-4e40-860c-829fe9bc0daa, from=operator)
-[2025-05-23T12:13:07.176Z] [DEBUG] 🔧 Verarbeite Trigger: "help" mit Argumenten: []
-[2025-05-23T12:13:07.176Z] [DEBUG] 🔧 Debug-Trigger empfangen: help 
-[2025-05-23T12:13:07.177Z] [DEBUG] 📚 Hilfe-Befehl empfangen
 [2025-05-23T12:13:07.177Z] [API-DEBUG] 📤 Sende Nachricht an session_a3368e83-7f86-4e40-860c-829fe9bc0daa: 
 🤖 **WipeBot Debug-Befehle**
 
@@ -341,79 +320,10 @@
 
 [2025-05-23T12:13:07.177Z] [API-DEBUG] 🔄 API-Anfrage: POST website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_a3368e83-7f86-4e40-860c-829fe9bc0daa/message
 [2025-05-23T12:13:07.242Z] [API-DEBUG] ✅ API-Erfolg: 202 - website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_a3368e83-7f86-4e40-860c-829fe9bc0daa/message
-[2025-05-23T12:13:07.242Z] [DEBUG] 📤 Antwort gesendet: 
-🤖 **WipeBot Debug-Befehle**
-
-**Basisinformationen:**
-- `ping` - Prüft die Verbindung zum Server
-- ...
-[2025-05-23T12:13:07.243Z] [DEBUG] ✅ Trigger "help" erfolgreich verarbeitet
 [2025-05-23T12:13:07.257Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 170
 [2025-05-23T12:13:07.258Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:07.346Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:07.361Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:13:07.555Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:david.crump:wi
-[2025-05-23T12:13:07.555Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:13:07.555Z] [DEBUG] 📩 Webhook empfangen: "
-🤖 **WipeBot Debug-Befehle**
-
-**Basisinformationen:**
-- `ping` - Prüft die Verbindung zum Server
-- `help` - Zeigt diese Hilfe an
-- `version` - Zeigt die Plugin-Version
-- `time` - Zeigt die aktuelle Serverzeit
-- `crisp id` - Zeigt die Website-ID dieser Installation
-
-**Filter-Verwaltung:**
-- `filters` - Listet alle verfügbaren Filter auf
-- `preview [filtername]` - Zeigt Details zu einem bestimmten Filter
-
-**Löschoperationen:**
-- `wipe test` - Simuliert Löschung und zeigt betroffene Chats
-- `wipe [filtername]` - Führt Löschung mit dem angegebenen Filter durch
-
-**Log-Verwaltung:**
-- `log test` - Schreibt einen Testeintrag ins Debug-Log
-- `log view` - Zeigt den Inhalt des Debug-Logs
-- `log clear` - Leert das Debug-Log
-
-**Statistik-Verwaltung:**
-- `stats view` - Zeigt die aktuellen Statistiken
-- `stats reset` - Setzt die Statistiken zurück
-
-**Plugin-Verwaltung:**
-- `disconnect` - Trennt das Plugin von dieser Website (mit Bestätigung)
-- `debug off` - Deaktiviert den Debug-Modus
-" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_a3368e83-7f86-4e40-860c-829fe9bc0daa, from=operator)
-[2025-05-23T12:13:07.555Z] [DEBUG] ❓ Keine Trigger-Syntax erkannt: "🤖 **wipebot debug-befehle**
-
-**basisinformationen:**
-- `ping` - prüft die verbindung zum server
-- `help` - zeigt diese hilfe an
-- `version` - zeigt die plugin-version
-- `time` - zeigt die aktuelle serverzeit
-- `crisp id` - zeigt die website-id dieser installation
-
-**filter-verwaltung:**
-- `filters` - listet alle verfügbaren filter auf
-- `preview [filtername]` - zeigt details zu einem bestimmten filter
-
-**löschoperationen:**
-- `wipe test` - simuliert löschung und zeigt betroffene chats
-- `wipe [filtername]` - führt löschung mit dem angegebenen filter durch
-
-**log-verwaltung:**
-- `log test` - schreibt einen testeintrag ins debug-log
-- `log view` - zeigt den inhalt des debug-logs
-- `log clear` - leert das debug-log
-
-**statistik-verwaltung:**
-- `stats view` - zeigt die aktuellen statistiken
-- `stats reset` - setzt die statistiken zurück
-
-**plugin-verwaltung:**
-- `disconnect` - trennt das plugin von dieser website (mit bestätigung)
-- `debug off` - deaktiviert den debug-modus"
 [2025-05-23T12:13:07.629Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:07.720Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:07.749Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -545,9 +455,6 @@
 [2025-05-23T12:13:23.774Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:23.787Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:23.879Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:13:23.965Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa
-[2025-05-23T12:13:23.965Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:13:23.965Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
 [2025-05-23T12:13:24.185Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:24.192Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:24.278Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -715,9 +622,6 @@
 [2025-05-23T12:13:40.823Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:40.823Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:13:40.824Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
-[2025-05-23T12:13:41.789Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:removed","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa"},
-[2025-05-23T12:13:41.789Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:13:41.789Z] [DEBUG] ⏭️ Ignoriertes Event: session:removed
 [2025-05-23T12:13:42.481Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:42.558Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:42.558Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -734,9 +638,6 @@
 [2025-05-23T12:13:42.909Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:42.910Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:13:42.910Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 4000ms vor Retry #3
-[2025-05-23T12:13:45.247Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:removed","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a58fb5ce-d4f5-4078-b640-763b773a824a"},
-[2025-05-23T12:13:45.247Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:13:45.247Z] [DEBUG] ⏭️ Ignoriertes Event: session:removed
 [2025-05-23T12:13:46.559Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:46.641Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:46.641Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -769,12 +670,6 @@
 [2025-05-23T12:13:55.049Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:13:55.049Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:13:55.050Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:14:09.254Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"type":"text","origin":"chat","content":"ping","timestamp":1748002449155,"fingerprint":174800244678228,"from":"user"
-[2025-05-23T12:14:09.254Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:09.254Z] [DEBUG] ⏭️ Ignoriertes Event: message:send
-[2025-05-23T12:14:09.262Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_state","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c"
-[2025-05-23T12:14:09.262Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:09.262Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_state
 [2025-05-23T12:14:10.712Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:14:10.789Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:14:10.789Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -795,94 +690,12 @@
 [2025-05-23T12:14:11.137Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:14:11.138Z] [API-ERROR] ❌ Fehler beim Auflisten der Konversationen: Request failed with status code 429
 [2025-05-23T12:14:11.138Z] [API-INFO] 📊 Insgesamt 1880 Konversationen in 94 Seiten gefunden
-[2025-05-23T12:14:15.498Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"note","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:14:15.498Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:15.498Z] [DEBUG] 📩 Webhook empfangen: "__HydroBot-Status:__ **ACTIVE**" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:14:15.498Z] [DEBUG] ❓ Keine Trigger-Syntax erkannt: "__hydrobot-status:__ **active**"
-[2025-05-23T12:14:18.456Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:14:18.456Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:18.456Z] [DEBUG] 📩 Webhook empfangen: "Hey, ich bin HydroBot! 💙" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:14:18.457Z] [DEBUG] ❓ Keine Trigger-Syntax erkannt: "hey, ich bin hydrobot! 💙"
-[2025-05-23T12:14:18.508Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800245839252],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:14:18.508Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:18.508Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
-[2025-05-23T12:14:18.523Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_inbox","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c"
-[2025-05-23T12:14:18.524Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:18.524Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_inbox
-[2025-05-23T12:14:19.691Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:14:19.691Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:19.691Z] [DEBUG] 📩 Webhook empfangen: "Die folgenden Nachrichten werden automatisch von mir generiert." (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:14:19.692Z] [DEBUG] ❌ Ungültiger Trigger: "die"
-[2025-05-23T12:14:19.771Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800245965660],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:14:19.771Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:19.771Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
-[2025-05-23T12:14:20.882Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:14:20.882Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:20.882Z] [DEBUG] 📩 Webhook empfangen: "Bitte gib mir einen Moment, während ich mir dein Anliegen anschaue! 🤖" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:14:20.882Z] [DEBUG] ❌ Ungültiger Trigger: "bitte"
-[2025-05-23T12:14:20.953Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800246084040],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:14:20.953Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:20.953Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
-[2025-05-23T12:14:21.926Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c
-[2025-05-23T12:14:21.926Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:21.926Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
-[2025-05-23T12:14:22.278Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:send","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","origin":"chat","fingerprints":[174800244678228
-[2025-05-23T12:14:22.278Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:22.278Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:send
-[2025-05-23T12:14:24.173Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_data","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c",
-[2025-05-23T12:14:24.175Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:24.176Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_data
-[2025-05-23T12:14:26.462Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_inbox","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c"
-[2025-05-23T12:14:26.462Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:26.462Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_inbox
-[2025-05-23T12:14:27.191Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800245839252,174800245965660,174800246084040],"website_id":"
-[2025-05-23T12:14:27.191Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:27.191Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
-[2025-05-23T12:14:30.402Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"type":"text","origin":"chat","content":"help","timestamp":1748002470295,"fingerprint":174800246914193,"from":"user"
-[2025-05-23T12:14:30.402Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:30.402Z] [DEBUG] ⏭️ Ignoriertes Event: message:send
-[2025-05-23T12:14:35.257Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_292cd110-5511-402c-805c-d34c3db813bf
-[2025-05-23T12:14:35.257Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:35.257Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
-[2025-05-23T12:14:56.277Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c
-[2025-05-23T12:14:56.277Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:56.277Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
-[2025-05-23T12:14:56.796Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:send","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","origin":"chat","fingerprints":[174800246914193
-[2025-05-23T12:14:56.796Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:14:56.796Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:send
-[2025-05-23T12:15:04.262Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"note","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:15:04.262Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:04.262Z] [DEBUG] 📩 Webhook empfangen: "HydroBot  was unable to generate an answer.
-
-__HydroBot-Status:__ **FALLBACK ACTIVE**" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:15:04.262Z] [DEBUG] ❓ Keine Trigger-Syntax erkannt: "hydrobot  was unable to generate an answer.
-
-__hydrobot-status:__ **fallback active**"
-[2025-05-23T12:15:04.290Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_inbox","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_c4cbc722-bd8f-4aed-b2f6-6cbc75c17fef"
-[2025-05-23T12:15:04.290Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:04.290Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_inbox
-[2025-05-23T12:15:05.206Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_segments","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e39
-[2025-05-23T12:15:05.206Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:05.206Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_segments
-[2025-05-23T12:15:06.466Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:15:06.466Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:06.469Z] [DEBUG] 📩 Webhook empfangen: "Hm, dazu hab ich gerade noch keine Antwort parat. Magst du die Frage vielleicht noch mal etwas einfacher stellen? 😊" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:15:06.469Z] [DEBUG] ❓ Keine Trigger-Syntax erkannt: "hm, dazu hab ich gerade noch keine antwort parat. magst du die frage vielleicht noch mal etwas einfacher stellen? 😊"
 [2025-05-23T12:15:06.549Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:15:06.549Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:15:06.549Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:15:06.553Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800250641537],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:15:06.553Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:06.553Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
 [2025-05-23T12:15:06.635Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:15:06.635Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:15:06.635Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 1000ms vor Retry #1
-[2025-05-23T12:15:06.679Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_c4cbc722-bd8f-4aed-b2f6-6cbc75c17fef
-[2025-05-23T12:15:06.680Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:06.680Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
-[2025-05-23T12:15:07.320Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:send","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","origin":"chat","fingerprints":[174799909640815
-[2025-05-23T12:15:07.320Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:07.320Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:send
 [2025-05-23T12:15:07.636Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:15:07.711Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:15:07.711Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -899,9 +712,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:15:21.975Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:15:21.976Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:15:21.976Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:15:33.862Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[-722591833],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8"
-[2025-05-23T12:15:33.862Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:33.862Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
 [2025-05-23T12:15:37.932Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:15:37.932Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:15:37.932Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -929,12 +739,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:15:53.328Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:15:53.329Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:15:53.329Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:15:55.351Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_c4cbc722-bd8f-4aed-b2f6-6cbc75c17fef
-[2025-05-23T12:15:55.351Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:55.352Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
-[2025-05-23T12:15:59.752Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_c4cbc722-bd8f-4aed-b2f6-6cbc75c17fef
-[2025-05-23T12:15:59.752Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:15:59.752Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
 [2025-05-23T12:16:07.992Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:16:07.992Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:16:07.992Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -968,9 +772,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:16:13.741Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:13.741Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:16:13.741Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 4000ms vor Retry #3
-[2025-05-23T12:16:13.858Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:removed","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_c4cbc722-bd8f-4aed-b2f6-6cbc75c17fef"},
-[2025-05-23T12:16:13.858Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:16:13.859Z] [DEBUG] ⏭️ Ignoriertes Event: session:removed
 [2025-05-23T12:16:15.208Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:15.279Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:15.279Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -979,9 +780,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:16:17.826Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:17.826Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:16:17.827Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 8000ms vor Retry #4
-[2025-05-23T12:16:20.533Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800250641537],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bb
-[2025-05-23T12:16:20.533Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:16:20.533Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
 [2025-05-23T12:16:23.280Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:23.359Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:23.360Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -990,9 +788,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:16:25.887Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:25.887Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:16:25.888Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:16:33.025Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"type":"text","origin":"chat","content":"LQTEST","timestamp":1748002592925,"fingerprint":174800259118481,"from":"use
-[2025-05-23T12:16:33.025Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:16:33.025Z] [DEBUG] ⏭️ Ignoriertes Event: message:send
 [2025-05-23T12:16:39.361Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:39.445Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:16:39.445Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1053,24 +848,10 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:17:08.534Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:08.534Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:17:08.535Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 1000ms vor Retry #1
-[2025-05-23T12:17:08.582Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"note","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:17:08.582Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:08.583Z] [DEBUG] 📩 Webhook empfangen: "Fallback was unable to generate an answer." (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:17:08.583Z] [DEBUG] ❌ Ungültiger Trigger: "fallback"
-[2025-05-23T12:17:09.392Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_inbox","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c"
-[2025-05-23T12:17:09.392Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:09.392Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_inbox
 [2025-05-23T12:17:09.537Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:09.600Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:09.600Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:17:09.601Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
-[2025-05-23T12:17:09.716Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:17:09.716Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:09.716Z] [DEBUG] 📩 Webhook empfangen: "Es sieht ganz so aus, als könnte ich dir damit aktuell noch nicht weiterhelfen.. Sorry! :(" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_73d568d8-2e54-490f-ae84-5a56775e396c, from=operator)
-[2025-05-23T12:17:09.716Z] [DEBUG] ❌ Ungültiger Trigger: "es"
-[2025-05-23T12:17:09.840Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800262968315],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:17:09.840Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:09.840Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
 [2025-05-23T12:17:11.117Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:11.201Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:11.201Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1090,12 +871,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:17:13.642Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:13.643Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:17:13.643Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
-[2025-05-23T12:17:14.477Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c
-[2025-05-23T12:17:14.477Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:14.477Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
-[2025-05-23T12:17:15.451Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:send","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","origin":"chat","fingerprints":[174800259118481
-[2025-05-23T12:17:15.451Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:15.451Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:send
 [2025-05-23T12:17:15.644Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:15.696Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:15.726Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -1117,16 +892,10 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:17:23.839Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:23.839Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:17:23.840Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:17:26.995Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:removed","data":{"fingerprint":174800245540552,"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-
-[2025-05-23T12:17:26.996Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:26.996Z] [DEBUG] ⏭️ Ignoriertes Event: message:removed
 [2025-05-23T12:17:27.807Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:27.912Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:27.913Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:17:27.913Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:17:32.468Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:removed","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c"},
-[2025-05-23T12:17:32.468Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:17:32.468Z] [DEBUG] ⏭️ Ignoriertes Event: session:removed
 [2025-05-23T12:17:39.840Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:17:39.843Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:17:39.844Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
@@ -1196,9 +965,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:18:11.301Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:18:11.301Z] [API-ERROR] ❌ Fehler beim Auflisten der Konversationen: Request failed with status code 429
 [2025-05-23T12:18:11.301Z] [API-INFO] 📊 Insgesamt 0 Konversationen in 0 Seiten gefunden
-[2025-05-23T12:18:12.040Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[-722591833],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8"
-[2025-05-23T12:18:12.040Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:18:12.040Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
 [2025-05-23T12:18:12.093Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:18:12.093Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:18:12.093Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -1262,9 +1028,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:18:43.961Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:18:43.961Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:18:43.961Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 4000ms vor Retry #3
-[2025-05-23T12:18:46.502Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:18:46.502Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:18:46.502Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
 [2025-05-23T12:18:46.805Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:18:46.805Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:18:46.805Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -1272,9 +1035,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:18:46.889Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:18:46.889Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 1000ms vor Retry #1
 [2025-05-23T12:18:47.890Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:18:47.910Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:18:47.910Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:18:47.910Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
 [2025-05-23T12:18:47.960Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:18:47.960Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:18:47.961Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
@@ -1394,12 +1154,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:19:51.104Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:19:51.104Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:19:51.104Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 4000ms vor Retry #3
-[2025-05-23T12:19:51.713Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:19:51.713Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:19:51.713Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
-[2025-05-23T12:19:53.321Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:19:53.321Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:19:53.321Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
 [2025-05-23T12:19:55.105Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:19:55.187Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:19:55.187Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1408,9 +1162,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:19:56.217Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:19:56.218Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:19:56.218Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:20:02.221Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800262968315],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bb
-[2025-05-23T12:20:02.221Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:02.221Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
 [2025-05-23T12:20:03.188Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:03.281Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:03.281Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1469,22 +1220,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:20:29.108Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:29.108Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:20:29.109Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:20:30.323Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"type":"text","origin":"chat","content":"LQTEST","timestamp":1748002830236,"fingerprint":174800282857439,"from":"use
-[2025-05-23T12:20:30.323Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:30.323Z] [DEBUG] ⏭️ Ignoriertes Event: message:send
-[2025-05-23T12:20:30.335Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_state","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_310f6ef5-82fd-4b1d-b730-50b3de01afd4"
-[2025-05-23T12:20:30.335Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:30.335Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_state
-[2025-05-23T12:20:37.248Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:20:37.248Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:37.248Z] [DEBUG] 📩 Webhook empfangen: "This is a test scenario & reserved exclusively for authorised employees. Please enter the required password." (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_310f6ef5-82fd-4b1d-b730-50b3de01afd4, from=operator)
-[2025-05-23T12:20:37.248Z] [DEBUG] ❌ Ungültiger Trigger: "this"
-[2025-05-23T12:20:37.293Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800283718390],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bb
-[2025-05-23T12:20:37.293Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:37.293Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
-[2025-05-23T12:20:37.343Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800283718390],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:20:37.343Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:37.343Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
 [2025-05-23T12:20:40.949Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:41.022Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:41.022Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1500,9 +1235,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:20:42.584Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:42.585Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:20:42.585Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
-[2025-05-23T12:20:44.281Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"type":"text","origin":"chat","content":"Berlin-10963!","timestamp":1748002844190,"fingerprint":174800284303165,"fro
-[2025-05-23T12:20:44.281Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:44.281Z] [DEBUG] ⏭️ Ignoriertes Event: message:send
 [2025-05-23T12:20:44.586Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:44.656Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:44.656Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1512,15 +1244,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:20:45.194Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:20:45.194Z] [API-ERROR] ❌ Fehler beim Auflisten der Konversationen: Request failed with status code 429
 [2025-05-23T12:20:45.194Z] [API-INFO] 📊 Insgesamt 0 Konversationen in 0 Seiten gefunden
-[2025-05-23T12:20:45.458Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_data","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_310f6ef5-82fd-4b1d-b730-50b3de01afd4",
-[2025-05-23T12:20:45.458Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:45.458Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_data
-[2025-05-23T12:20:45.511Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_inbox","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_310f6ef5-82fd-4b1d-b730-50b3de01afd4"
-[2025-05-23T12:20:45.512Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:45.512Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_inbox
-[2025-05-23T12:20:46.634Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_segments","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_310f6ef5-82fd-4b1d-b730-50b3de01af
-[2025-05-23T12:20:46.634Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:46.635Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_segments
 [2025-05-23T12:20:48.481Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:20:48.481Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:20:48.482Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -1531,10 +1254,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:20:48.737Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:48.738Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:20:48.738Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 8000ms vor Retry #4
-[2025-05-23T12:20:48.997Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"note","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:20:48.997Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:20:48.997Z] [DEBUG] 📩 Webhook empfangen: "HydroBot Status: **TEST SCENARIO AVTIVE**" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_310f6ef5-82fd-4b1d-b730-50b3de01afd4, from=operator)
-[2025-05-23T12:20:48.997Z] [DEBUG] ❌ Ungültiger Trigger: "hydrobot"
 [2025-05-23T12:20:49.558Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:49.625Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:20:49.625Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1689,9 +1408,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:22:13.943Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:22:13.944Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 4000ms vor Retry #3
 [2025-05-23T12:22:14.756Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:22:14.763Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_closed","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_73d568d8-2e54-490f-ae84-5a56775e396c
-[2025-05-23T12:22:14.763Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:22:14.763Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_closed
 [2025-05-23T12:22:14.839Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:22:14.839Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:22:14.840Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
@@ -1735,9 +1451,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:22:43.250Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:22:43.250Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:22:43.250Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
-[2025-05-23T12:22:44.825Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","origin":"email","fingerprints":[17480028430316
-[2025-05-23T12:22:44.825Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:22:44.825Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
 [2025-05-23T12:22:45.076Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:22:45.139Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:22:45.139Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -1989,19 +1702,10 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:24:58.512Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:24:58.512Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:24:58.512Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:25:02.119Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:25:02.119Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:25:02.119Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
-[2025-05-23T12:25:03.400Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:25:03.400Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:25:03.400Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
 [2025-05-23T12:25:05.552Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:25:05.631Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:25:05.631Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:25:05.632Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:25:05.770Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[-722591833],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8"
-[2025-05-23T12:25:05.770Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:25:05.770Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
 [2025-05-23T12:25:11.635Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:25:11.635Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:25:11.636Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -2048,9 +1752,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:25:22.992Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:25:22.992Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:25:22.993Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 8000ms vor Retry #4
-[2025-05-23T12:25:24.280Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[-722591833],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8"
-[2025-05-23T12:25:24.280Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:25:24.280Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
 [2025-05-23T12:25:27.005Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:25:27.079Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:25:27.080Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -2059,12 +1760,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:25:31.073Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:25:31.073Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:25:31.073Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:25:34.738Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:25:34.738Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:25:34.738Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
-[2025-05-23T12:25:36.474Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"plugin:settings:saved","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","plugin_id":"d2fe8f2b-6fef-46f4-9aff-2d2b55989c87","set
-[2025-05-23T12:25:36.475Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:25:36.475Z] [DEBUG] ⏭️ Ignoriertes Event: plugin:settings:saved
 [2025-05-23T12:25:43.009Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:25:43.009Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:25:43.010Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -2115,26 +1810,10 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:25:58.432Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:25:58.432Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:25:58.433Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:26:03.026Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"type":"text","origin":"chat","content":"lqtest","timestamp":1748003162920,"fingerprint":174800316120518,"from":"use
-[2025-05-23T12:26:03.026Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:03.026Z] [DEBUG] ⏭️ Ignoriertes Event: message:send
-[2025-05-23T12:26:03.030Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_state","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81"
-[2025-05-23T12:26:03.030Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:03.030Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_state
 [2025-05-23T12:26:05.531Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:05.592Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:05.592Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:05.592Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:26:09.843Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:26:09.844Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:09.844Z] [DEBUG] 📩 Webhook empfangen: "This is a test scenario & reserved exclusively for authorised employees. Please enter the required password." (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:26:09.844Z] [DEBUG] ❌ Ungültiger Trigger: "this"
-[2025-05-23T12:26:09.875Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800316974981],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bb
-[2025-05-23T12:26:09.876Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:09.876Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
-[2025-05-23T12:26:09.894Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800316974981],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:26:09.894Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:09.894Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
 [2025-05-23T12:26:12.615Z] [API-INFO] 🔍 Starte Konversationssuche für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Seitengröße 100
 [2025-05-23T12:26:12.615Z] [API-DEBUG] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 - Seite 1
 [2025-05-23T12:26:12.616Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
@@ -2160,50 +1839,18 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:26:15.834Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:15.834Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:15.834Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 4000ms vor Retry #3
-[2025-05-23T12:26:16.462Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"type":"text","origin":"chat","content":"Berlin-10963!","timestamp":1748003176394,"fingerprint":174800317523873,"fro
-[2025-05-23T12:26:16.463Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:16.463Z] [DEBUG] ⏭️ Ignoriertes Event: message:send
 [2025-05-23T12:26:16.732Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:16.812Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:16.813Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:16.813Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
-[2025-05-23T12:26:17.696Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:26:17.697Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:17.697Z] [DEBUG] 📩 Webhook empfangen: "Access granted." (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:26:17.697Z] [DEBUG] ❌ Ungültiger Trigger: "access"
-[2025-05-23T12:26:17.719Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800317761542],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bb
-[2025-05-23T12:26:17.719Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:17.719Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
-[2025-05-23T12:26:17.733Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800317761542],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:26:17.733Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:17.733Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
 [2025-05-23T12:26:18.813Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:26:18.843Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:26:18.843Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:18.843Z] [DEBUG] 📩 Webhook empfangen: "Test-Scenario is being prepared." (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:26:18.843Z] [DEBUG] ❓ Keine Trigger-Syntax erkannt: "test-scenario is being prepared."
-[2025-05-23T12:26:18.875Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800317880745],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bb
-[2025-05-23T12:26:18.875Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:18.876Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
 [2025-05-23T12:26:18.900Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:18.900Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:18.900Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 4000ms vor Retry #3
-[2025-05-23T12:26:18.925Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800317880745],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:26:18.925Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:18.925Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
 [2025-05-23T12:26:19.836Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:19.914Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:19.914Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:19.914Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 8000ms vor Retry #4
-[2025-05-23T12:26:20.041Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_data","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81",
-[2025-05-23T12:26:20.041Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:20.041Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_data
-[2025-05-23T12:26:20.093Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_inbox","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81"
-[2025-05-23T12:26:20.093Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:20.093Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_inbox
-[2025-05-23T12:26:21.241Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_segments","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a
-[2025-05-23T12:26:21.241Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:21.241Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_segments
 [2025-05-23T12:26:21.593Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:21.649Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:21.649Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -2213,20 +1860,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:26:22.979Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:22.979Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:22.980Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 8000ms vor Retry #4
-[2025-05-23T12:26:23.594Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:26:23.594Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:23.595Z] [DEBUG] 📩 Webhook empfangen: "Tests can now be carried out." (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:26:23.595Z] [DEBUG] ❌ Ungültiger Trigger: "tests"
-[2025-05-23T12:26:23.624Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[174800318354241],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bb
-[2025-05-23T12:26:23.624Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:23.624Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:received
-[2025-05-23T12:26:23.665Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:delivered","data":{"origin":"chat","fingerprints":[174800318354241],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8
-[2025-05-23T12:26:23.665Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:23.665Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:delivered
-[2025-05-23T12:26:24.759Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"note","from":"operator","origin":"urn:crisp.im:bot:0
-[2025-05-23T12:26:24.759Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:24.759Z] [DEBUG] 📩 Webhook empfangen: "HydroBot Status: **TEST SCENARIO AVTIVE**" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:26:24.759Z] [DEBUG] ❌ Ungültiger Trigger: "hydrobot"
 [2025-05-23T12:26:27.915Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:27.999Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:28.000Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -2235,15 +1868,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:26:31.066Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:31.066Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:31.067Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:26:39.368Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:removed","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_310f6ef5-82fd-4b1d-b730-50b3de01afd4"},
-[2025-05-23T12:26:39.368Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:39.368Z] [DEBUG] ⏭️ Ignoriertes Event: session:removed
-[2025-05-23T12:26:42.723Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81
-[2025-05-23T12:26:42.723Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:42.723Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_opened
-[2025-05-23T12:26:43.457Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:send","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","origin":"chat","fingerprints":[174800316120518
-[2025-05-23T12:26:43.457Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:26:43.457Z] [DEBUG] ⏭️ Ignoriertes Event: message:acknowledge:read:send
 [2025-05-23T12:26:44.001Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:44.093Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:44.093Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
@@ -2294,17 +1918,8 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:26:59.574Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:26:59.574Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:26:59.575Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:27:00.568Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
-[2025-05-23T12:27:00.568Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:27:00.569Z] [DEBUG] 📩 Webhook empfangen: "ping" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:27:00.569Z] [DEBUG] 🔧 Verarbeite Trigger: "ping" mit Argumenten: []
-[2025-05-23T12:27:00.569Z] [DEBUG] 🔧 Debug-Trigger empfangen: ping 
-[2025-05-23T12:27:00.569Z] [DEBUG] 🏓 Ping-Befehl empfangen
 [2025-05-23T12:27:00.569Z] [API-DEBUG] 📤 Sende Nachricht an session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81: pong
 [2025-05-23T12:27:00.570Z] [API-DEBUG] 🔄 API-Anfrage: POST website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
-[2025-05-23T12:27:00.575Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_state","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81"
-[2025-05-23T12:27:00.575Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:27:00.575Z] [DEBUG] ⏭️ Ignoriertes Event: session:set_state
 [2025-05-23T12:27:00.666Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
 [2025-05-23T12:27:00.666Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:27:00.667Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 1000ms vor Retry #1
@@ -2320,12 +1935,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:27:05.639Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:27:05.639Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:27:05.639Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
-[2025-05-23T12:27:07.543Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
-[2025-05-23T12:27:07.543Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:27:07.543Z] [DEBUG] 📩 Webhook empfangen: "ping" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:27:07.543Z] [DEBUG] 🔧 Verarbeite Trigger: "ping" mit Argumenten: []
-[2025-05-23T12:27:07.543Z] [DEBUG] 🔧 Debug-Trigger empfangen: ping 
-[2025-05-23T12:27:07.544Z] [DEBUG] 🏓 Ping-Befehl empfangen
 [2025-05-23T12:27:07.544Z] [API-DEBUG] 📤 Sende Nachricht an session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81: pong
 [2025-05-23T12:27:07.544Z] [API-DEBUG] 🔄 API-Anfrage: POST website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
 [2025-05-23T12:27:07.616Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
@@ -2353,12 +1962,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:27:13.825Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:27:13.825Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:27:13.826Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
-[2025-05-23T12:27:14.548Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
-[2025-05-23T12:27:14.548Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:27:14.548Z] [DEBUG] 📩 Webhook empfangen: "ping" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:27:14.548Z] [DEBUG] 🔧 Verarbeite Trigger: "ping" mit Argumenten: []
-[2025-05-23T12:27:14.548Z] [DEBUG] 🔧 Debug-Trigger empfangen: ping 
-[2025-05-23T12:27:14.548Z] [DEBUG] 🏓 Ping-Befehl empfangen
 [2025-05-23T12:27:14.548Z] [API-DEBUG] 📤 Sende Nachricht an session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81: pong
 [2025-05-23T12:27:14.549Z] [API-DEBUG] 🔄 API-Anfrage: POST website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
 [2025-05-23T12:27:14.632Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
@@ -2378,12 +1981,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:27:15.712Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:27:15.712Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 2000ms vor Retry #2
 [2025-05-23T12:27:15.826Z] [API-DEBUG] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
-[2025-05-23T12:27:15.832Z] [DEBUG] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"h
-[2025-05-23T12:27:15.832Z] [DEBUG] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
-[2025-05-23T12:27:15.832Z] [DEBUG] 📩 Webhook empfangen: "help" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81, from=operator)
-[2025-05-23T12:27:15.832Z] [DEBUG] 🔧 Verarbeite Trigger: "help" mit Argumenten: []
-[2025-05-23T12:27:15.832Z] [DEBUG] 🔧 Debug-Trigger empfangen: help 
-[2025-05-23T12:27:15.832Z] [DEBUG] 📚 Hilfe-Befehl empfangen
 [2025-05-23T12:27:15.832Z] [API-DEBUG] 📤 Sende Nachricht an session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81: 
 🤖 **WipeBot Debug-Befehle**
 
@@ -2494,8 +2091,6 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:27:32.075Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
 [2025-05-23T12:27:32.076Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:27:32.076Z] [API-ERROR] ❌ Fehler beim Senden der Nachricht: Request failed with status code 429
-[2025-05-23T12:27:32.076Z] [DEBUG] 📤 Antwort gesendet: pong
-[2025-05-23T12:27:32.076Z] [DEBUG] ✅ Trigger "ping" erfolgreich verarbeitet
 [2025-05-23T12:27:32.136Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
 [2025-05-23T12:27:32.137Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:27:32.137Z] [API-WARN] ⏱️ Rate-Limit erreicht. Warte 16000ms vor Retry #5
@@ -2503,5 +2098,3 @@ __hydrobot-status:__ **fallback active**"
 [2025-05-23T12:27:39.090Z] [API-ERROR] ❌ API-Fehler: 429 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_4efda6f9-8fd3-47ab-bb4f-36c7b3787a81/message
 [2025-05-23T12:27:39.091Z] [API-DEBUG] 📝 API-Fehler-Details: {"error":true,"reason":"rate_limited","data":{"namespace":"quota","classifier":"3dbf2559-f8c3-48c3-8fd0-894fa32fa29f","message":"your token is out of requests quota for now"}}
 [2025-05-23T12:27:39.091Z] [API-ERROR] ❌ Fehler beim Senden der Nachricht: Request failed with status code 429
-[2025-05-23T12:27:39.091Z] [DEBUG] 📤 Antwort gesendet: pong
-[2025-05-23T12:27:39.091Z] [DEBUG] ✅ Trigger "ping" erfolgreich verarbeitet

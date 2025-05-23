@@ -1,0 +1,14 @@
+[2025-05-23T12:11:14.981Z] [DEBUG] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T12:11:15.204Z] [API-INFO] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T12:11:15.206Z] [API-INFO] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T12:11:15.207Z] [API-INFO] 🔌 Crisp API Client initialisiert
+[2025-05-23T12:11:15.207Z] [API-ERROR] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T12:11:15.219Z] [DEBUG] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T12:11:15.221Z] [DEBUG] 🐞 STARTUP: Debug-Modus ist AKTIV (aus auth.js: true)
+[2025-05-23T12:11:15.221Z] [DEBUG] 🔑 API Credentials: ID=vorhanden, KEY=vorhanden
+[2025-05-23T12:11:15.229Z] [DEBUG] 🚦 REST-API-Endpunkte erfolgreich eingerichtet
+[2025-05-23T12:11:15.236Z] [DEBUG] 🚀 WipeBot v1.0.0 gestartet auf Port 1234 (0.0.0.0)
+[2025-05-23T12:11:15.236Z] [DEBUG] 🔧 Modus: DEBUG
+[2025-05-23T12:11:15.236Z] [DEBUG] 🌐 Dashboard: https://dev.d-vicr.de/dashboard
+[2025-05-23T12:11:15.236Z] [DEBUG] 🔗 Webhook: https://dev.d-vicr.de/hook/message
+[2025-05-23T12:11:15.237Z] [API-WARN] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen

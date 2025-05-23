@@ -1,0 +1,280 @@
+[2025-05-23T10:48:13.905Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T10:48:14.132Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T10:48:14.137Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T10:48:14.137Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T10:48:14.137Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T10:48:14.150Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T10:48:14.152Z] 🐞 STARTUP: Debug-Modus ist AKTIV (aus auth.js: true)
+[2025-05-23T10:48:14.152Z] 🔑 API Credentials: ID=vorhanden, KEY=vorhanden
+[2025-05-23T10:48:14.159Z] 🚦 REST-API-Endpunkte erfolgreich eingerichtet
+[2025-05-23T10:48:14.167Z] 🚀 WipeBot v1.0.0 gestartet auf Port 1234 (0.0.0.0)
+[2025-05-23T10:48:14.167Z] 🔧 Modus: DEBUG
+[2025-05-23T10:48:14.167Z] 🌐 Dashboard: https://dev.d-vicr.de/dashboard
+[2025-05-23T10:48:14.168Z] 🔗 Webhook: https://dev.d-vicr.de/hook/message
+[2025-05-23T10:48:14.170Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
+[2025-05-23T10:48:15.121Z] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T10:48:15.133Z] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T10:48:15.137Z] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T10:48:15.137Z] 🔌 Crisp API Client initialisiert
+[2025-05-23T10:48:15.137Z] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T10:48:15.141Z] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T10:48:15.141Z] 🚀 Cron-Scheduler wird initialisiert
+[2025-05-23T10:48:15.142Z] 📋 0 aktive Filter für Website 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 geladen
+[2025-05-23T10:48:15.151Z] 🔄 Täglicher Wartungs-Job um 3:30 Uhr geplant
+[2025-05-23T10:48:15.152Z] ✅ Scheduler erfolgreich gestartet mit 1 Jobs
+[2025-05-23T10:48:15.153Z] 👀 Überwachung der Konfigurationsdatei aktiviert
+[2025-05-23T10:48:15.153Z] 🐞 Scheduler im DEBUG-Modus gestartet
+[2025-05-23T10:48:15.155Z] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
+[2025-05-23T10:48:18.118Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
+[2025-05-23T10:48:18.292Z] ❌ API-Fehler: 404 bei website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/plugins/list
+[2025-05-23T10:48:18.292Z] 📝 API-Fehler-Details: {"error":true,"reason":"not_found","data":{"message":"the route does not exist"}}
+[2025-05-23T10:48:18.294Z] ❌ Fehler beim Laden der Website-Plugins: Request failed with status code 404
+[2025-05-23T10:48:18.340Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":1,"page_size":100}
+[2025-05-23T10:48:18.341Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:18.746Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":2,"page_size":100}
+[2025-05-23T10:48:18.747Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:19.147Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":3,"page_size":100}
+[2025-05-23T10:48:19.147Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:19.552Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":4,"page_size":100}
+[2025-05-23T10:48:19.553Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:19.972Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":5,"page_size":100}
+[2025-05-23T10:48:19.972Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:20.369Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":6,"page_size":100}
+[2025-05-23T10:48:20.369Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:20.755Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"session:set_opened","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","session_id":"session_a3368e83-7f86-4e40-860c-829fe9bc0daa
+[2025-05-23T10:48:20.755Z] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
+[2025-05-23T10:48:20.755Z] ⏭️ Ignoriertes Event: session:set_opened
+[2025-05-23T10:48:20.768Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":7,"page_size":100}
+[2025-05-23T10:48:20.768Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:21.163Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":8,"page_size":100}
+[2025-05-23T10:48:21.164Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:21.556Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":9,"page_size":100}
+[2025-05-23T10:48:21.557Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:21.731Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"chat","content":"p
+[2025-05-23T10:48:21.731Z] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
+[2025-05-23T10:48:21.731Z] 📩 Webhook empfangen: "ping" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_a3368e83-7f86-4e40-860c-829fe9bc0daa, from=operator)
+[2025-05-23T10:48:21.731Z] 🔧 Verarbeite Trigger: "ping" mit Argumenten: []
+[2025-05-23T10:48:21.732Z] 🔧 Debug-Trigger empfangen: ping 
+[2025-05-23T10:48:21.732Z] 🏓 Ping-Befehl empfangen
+[2025-05-23T10:48:21.732Z] 📤 Sende Nachricht an session_a3368e83-7f86-4e40-860c-829fe9bc0daa: pong
+[2025-05-23T10:48:21.733Z] 🔄 API-Anfrage: POST website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversation/session_a3368e83-7f86-4e40-860c-829fe9bc0daa/message
+[2025-05-23T10:48:21.805Z] 📤 Antwort gesendet: pong
+[2025-05-23T10:48:21.805Z] ✅ Trigger "ping" erfolgreich verarbeitet
+[2025-05-23T10:48:21.829Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:received","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"operator","origin":"urn:david.crump:wi
+[2025-05-23T10:48:21.829Z] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
+[2025-05-23T10:48:21.829Z] 📩 Webhook empfangen: "pong" (website=3297e6f7-69b7-4b60-87bd-d22c65bbacc8, session=session_a3368e83-7f86-4e40-860c-829fe9bc0daa, from=operator)
+[2025-05-23T10:48:21.829Z] ❌ Ungültiger Trigger: "pong"
+[2025-05-23T10:48:21.969Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":10,"page_size":100}
+[2025-05-23T10:48:21.970Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:22.400Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":11,"page_size":100}
+[2025-05-23T10:48:22.401Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:22.797Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":12,"page_size":100}
+[2025-05-23T10:48:22.798Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:23.219Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":13,"page_size":100}
+[2025-05-23T10:48:23.219Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:23.851Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":14,"page_size":100}
+[2025-05-23T10:48:23.851Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:24.267Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":15,"page_size":100}
+[2025-05-23T10:48:24.267Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:24.649Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":16,"page_size":100}
+[2025-05-23T10:48:24.650Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:25.055Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":17,"page_size":100}
+[2025-05-23T10:48:25.055Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:25.436Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":18,"page_size":100}
+[2025-05-23T10:48:25.437Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:25.842Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":19,"page_size":100}
+[2025-05-23T10:48:25.842Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:26.232Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":20,"page_size":100}
+[2025-05-23T10:48:26.233Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:26.630Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":21,"page_size":100}
+[2025-05-23T10:48:26.630Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:27.031Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":22,"page_size":100}
+[2025-05-23T10:48:27.032Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:27.453Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":23,"page_size":100}
+[2025-05-23T10:48:27.453Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:27.854Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":24,"page_size":100}
+[2025-05-23T10:48:27.854Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:28.263Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":25,"page_size":100}
+[2025-05-23T10:48:28.263Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:28.667Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":26,"page_size":100}
+[2025-05-23T10:48:28.668Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:29.072Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":27,"page_size":100}
+[2025-05-23T10:48:29.073Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:29.463Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":28,"page_size":100}
+[2025-05-23T10:48:29.464Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:29.864Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":29,"page_size":100}
+[2025-05-23T10:48:29.864Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:30.262Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":30,"page_size":100}
+[2025-05-23T10:48:30.263Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:30.642Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":31,"page_size":100}
+[2025-05-23T10:48:30.643Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:31.047Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":32,"page_size":100}
+[2025-05-23T10:48:31.048Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:31.473Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":33,"page_size":100}
+[2025-05-23T10:48:31.473Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:31.874Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":34,"page_size":100}
+[2025-05-23T10:48:31.874Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:32.278Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":35,"page_size":100}
+[2025-05-23T10:48:32.279Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:32.690Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":36,"page_size":100}
+[2025-05-23T10:48:32.690Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:33.098Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":37,"page_size":100}
+[2025-05-23T10:48:33.099Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:33.500Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":38,"page_size":100}
+[2025-05-23T10:48:33.500Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:33.919Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":39,"page_size":100}
+[2025-05-23T10:48:33.919Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:34.312Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":40,"page_size":100}
+[2025-05-23T10:48:34.313Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:34.716Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":41,"page_size":100}
+[2025-05-23T10:48:34.717Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:35.122Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":42,"page_size":100}
+[2025-05-23T10:48:35.122Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:35.530Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":43,"page_size":100}
+[2025-05-23T10:48:35.530Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:35.924Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":44,"page_size":100}
+[2025-05-23T10:48:35.925Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:36.318Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":45,"page_size":100}
+[2025-05-23T10:48:36.319Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:36.706Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":46,"page_size":100}
+[2025-05-23T10:48:36.706Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:37.099Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":47,"page_size":100}
+[2025-05-23T10:48:37.099Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:37.501Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":48,"page_size":100}
+[2025-05-23T10:48:37.501Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:37.912Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":49,"page_size":100}
+[2025-05-23T10:48:37.913Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:38.306Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":50,"page_size":100}
+[2025-05-23T10:48:38.307Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:38.715Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":51,"page_size":100}
+[2025-05-23T10:48:38.716Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:39.114Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":52,"page_size":100}
+[2025-05-23T10:48:39.114Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:39.506Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":53,"page_size":100}
+[2025-05-23T10:48:39.507Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:39.915Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":54,"page_size":100}
+[2025-05-23T10:48:39.916Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:40.322Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":55,"page_size":100}
+[2025-05-23T10:48:40.323Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:40.709Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":56,"page_size":100}
+[2025-05-23T10:48:40.709Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:41.102Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":57,"page_size":100}
+[2025-05-23T10:48:41.103Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:41.497Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":58,"page_size":100}
+[2025-05-23T10:48:41.497Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:41.899Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":59,"page_size":100}
+[2025-05-23T10:48:41.900Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:42.303Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":60,"page_size":100}
+[2025-05-23T10:48:42.303Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:42.693Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":61,"page_size":100}
+[2025-05-23T10:48:42.693Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:43.068Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":62,"page_size":100}
+[2025-05-23T10:48:43.068Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:43.464Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":63,"page_size":100}
+[2025-05-23T10:48:43.464Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:43.842Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":64,"page_size":100}
+[2025-05-23T10:48:43.842Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:44.242Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":65,"page_size":100}
+[2025-05-23T10:48:44.242Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:44.634Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":66,"page_size":100}
+[2025-05-23T10:48:44.635Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:45.015Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":67,"page_size":100}
+[2025-05-23T10:48:45.016Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:45.391Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":68,"page_size":100}
+[2025-05-23T10:48:45.391Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:45.802Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":69,"page_size":100}
+[2025-05-23T10:48:45.803Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:46.200Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":70,"page_size":100}
+[2025-05-23T10:48:46.200Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:46.611Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":71,"page_size":100}
+[2025-05-23T10:48:46.611Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:47.003Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":72,"page_size":100}
+[2025-05-23T10:48:47.004Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:47.390Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":73,"page_size":100}
+[2025-05-23T10:48:47.391Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:47.797Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":74,"page_size":100}
+[2025-05-23T10:48:47.797Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:48.203Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":75,"page_size":100}
+[2025-05-23T10:48:48.204Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:48.592Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":76,"page_size":100}
+[2025-05-23T10:48:48.592Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:48.794Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:acknowledge:read:received","data":{"origin":"chat","fingerprints":[-722591833],"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8"
+[2025-05-23T10:48:48.795Z] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
+[2025-05-23T10:48:48.795Z] ⏭️ Ignoriertes Event: message:acknowledge:read:received
+[2025-05-23T10:48:48.984Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":77,"page_size":100}
+[2025-05-23T10:48:48.985Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:49.369Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":78,"page_size":100}
+[2025-05-23T10:48:49.370Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:49.631Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":1,"page_size":100}
+[2025-05-23T10:48:49.631Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:49.744Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":79,"page_size":100}
+[2025-05-23T10:48:49.745Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:50.028Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":2,"page_size":100}
+[2025-05-23T10:48:50.028Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:50.118Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":80,"page_size":100}
+[2025-05-23T10:48:50.119Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:50.418Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":3,"page_size":100}
+[2025-05-23T10:48:50.418Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:50.521Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":81,"page_size":100}
+[2025-05-23T10:48:50.521Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:50.815Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":4,"page_size":100}
+[2025-05-23T10:48:50.815Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:50.926Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":82,"page_size":100}
+[2025-05-23T10:48:50.926Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:51.217Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":5,"page_size":100}
+[2025-05-23T10:48:51.218Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:51.324Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":83,"page_size":100}
+[2025-05-23T10:48:51.324Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:51.608Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":6,"page_size":100}
+[2025-05-23T10:48:51.609Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:51.694Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":84,"page_size":100}
+[2025-05-23T10:48:51.695Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:52.011Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":7,"page_size":100}
+[2025-05-23T10:48:52.011Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:52.017Z] 📥 Webhook-Anfrage empfangen: {"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","event":"message:send","data":{"website_id":"3297e6f7-69b7-4b60-87bd-d22c65bbacc8","type":"text","from":"user","origin":"urn:crisp.im:whatsapp:0","
+[2025-05-23T10:48:52.018Z] 🐞 Debug-Modus: Signatur-Prüfung wird übersprungen
+[2025-05-23T10:48:52.018Z] ⏭️ Ignoriertes Event: message:send
+[2025-05-23T10:48:52.071Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":85,"page_size":100}
+[2025-05-23T10:48:52.072Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:52.417Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":8,"page_size":100}
+[2025-05-23T10:48:52.417Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:52.470Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":86,"page_size":100}
+[2025-05-23T10:48:52.470Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:52.793Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":9,"page_size":100}
+[2025-05-23T10:48:52.793Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:52.883Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":87,"page_size":100}
+[2025-05-23T10:48:52.883Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:53.197Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":10,"page_size":100}
+[2025-05-23T10:48:53.198Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:53.288Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":88,"page_size":100}
+[2025-05-23T10:48:53.288Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:53.574Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":11,"page_size":100}
+[2025-05-23T10:48:53.574Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:53.661Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":89,"page_size":100}
+[2025-05-23T10:48:53.661Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:53.958Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":12,"page_size":100}
+[2025-05-23T10:48:53.959Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:54.058Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":90,"page_size":100}
+[2025-05-23T10:48:54.059Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:54.357Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":13,"page_size":100}
+[2025-05-23T10:48:54.357Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:54.448Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":91,"page_size":100}
+[2025-05-23T10:48:54.448Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:54.758Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":14,"page_size":100}
+[2025-05-23T10:48:54.758Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T10:48:54.834Z] 🔍 Suche Konversationen für 3297e6f7-69b7-4b60-87bd-d22c65bbacc8 mit Filter: {"page_number":92,"page_size":100}
+[2025-05-23T10:48:54.834Z] 🔄 API-Anfrage: GET website/3297e6f7-69b7-4b60-87bd-d22c65bbacc8/conversations
+[2025-05-23T11:49:49.161Z] [DEBUG] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-23T11:49:49.374Z] [API-INFO] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-23T11:49:49.377Z] [API-INFO] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-23T11:49:49.377Z] [API-INFO] 🔌 Crisp API Client initialisiert
+[2025-05-23T11:49:49.377Z] [API-ERROR] ❌ Authentifizierungstest fehlgeschlagen: [envalid] Env var not found: TEST_WEBSITE_ID
+[2025-05-23T11:49:49.389Z] [DEBUG] 🤖 WipeBot Plugin v1.0.0 gestartet (DEBUG-MODUS)
+[2025-05-23T11:49:49.390Z] [DEBUG] 🐞 STARTUP: Debug-Modus ist AKTIV (aus auth.js: true)
+[2025-05-23T11:49:49.390Z] [DEBUG] 🔑 API Credentials: ID=vorhanden, KEY=vorhanden
+[2025-05-23T11:49:49.398Z] [DEBUG] 🚦 REST-API-Endpunkte erfolgreich eingerichtet
+[2025-05-23T11:49:49.405Z] [DEBUG] 🚀 WipeBot v1.0.0 gestartet auf Port 1234 (0.0.0.0)
+[2025-05-23T11:49:49.405Z] [DEBUG] 🔧 Modus: DEBUG
+[2025-05-23T11:49:49.406Z] [DEBUG] 🌐 Dashboard: https://dev.d-vicr.de/dashboard
+[2025-05-23T11:49:49.406Z] [DEBUG] 🔗 Webhook: https://dev.d-vicr.de/hook/message
+[2025-05-23T11:49:49.407Z] [API-WARN] ⚠️ Initiale Authentifizierungsprüfung fehlgeschlagen
