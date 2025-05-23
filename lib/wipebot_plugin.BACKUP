@@ -1,15 +1,9 @@
 /**
- * wipebot_plugin.js - OPTIMIERT für intelligentes Debug-Request-Management
+ * wipebot_plugin.js
  * Zentrale Steuerungslogik für das WipeBot-Plugin
  * 
  * Dieses Modul integriert den Crisp-Client und den Filter-Manager
  * und stellt Funktionen für Debug-Trigger, Cleanup-Operationen und REST-API-Integration bereit.
- * 
- * NEUE FUNKTIONEN:
- * - Intelligentes Debug-Request-Management (pausiert Auto-API-Calls im Debug-Modus)
- * - Context-basierte API-Call-Steuerung
- * - Optimierte Statistik-Funktionen mit Caching
- * - Effiziente REST-API-Handler
  */
 
 // Core-Module importieren
@@ -29,16 +23,8 @@ const DEBUG_MODE = process.env.DEBUG_MODE === 'true';
 // Pfad zur Statistik-Datei
 const STATS_PATH = path.join(__dirname, '../data/statistics.json');
 
-// Cache für optimierte Performance
-const performanceCache = {
-  chatCounts: new Map(),
-  statistics: new Map(),
-  lastCacheUpdate: new Map(),
-  CACHE_DURATION: 2 * 60 * 1000 // 2 Minuten Cache-Dauer
-};
-
 /**
- * WipeBot-Plugin-Klasse mit optimiertem Request-Management
+ * WipeBot-Plugin-Klasse
  * Zentrales Interface für alle WipeBot-Funktionen
  */
 class WipeBotPlugin {
@@ -46,19 +32,11 @@ class WipeBotPlugin {
     this.debugMode = DEBUG_MODE;
     this.version = version;
     
-    // Performance-Tracking
-    this.performanceStats = {
-      totalRequests: 0,
-      debugRequests: 0,
-      cachedResponses: 0,
-      startTime: Date.now()
-    };
-    
     // Sicherstellen, dass das Datenverzeichnis existiert
     this.ensureDataDirExists();
     
     if (this.debugMode) {
-      logDebug(`🤖 WipeBot Plugin v${this.version} gestartet (DEBUG-MODUS mit Request-Management)`);
+      logDebug(`🤖 WipeBot Plugin v${this.version} gestartet (DEBUG-MODUS)`);
     } else {
       logger.log(`🤖 WipeBot Plugin v${this.version} gestartet`);
     }
@@ -75,66 +53,6 @@ class WipeBotPlugin {
       }
     } catch (error) {
       logDebug(`❌ Fehler beim Erstellen des Datenverzeichnisses: ${error.message}`);
-    }
-  }
-
-  /**
-   * OPTIMIERT: Prüft Cache-Gültigkeit für eine gegebene Website-ID und Cache-Type
-   * @param {string} websiteId - Die Website-ID
-   * @param {string} cacheType - Der Cache-Type ('chatCount', 'statistics', etc.)
-   * @returns {boolean} True, wenn Cache gültig ist
-   */
-  isCacheValid(websiteId, cacheType) {
-    const cacheKey = `${websiteId}_${cacheType}`;
-    const lastUpdate = performanceCache.lastCacheUpdate.get(cacheKey);
-    
-    if (!lastUpdate) return false;
-    
-    return (Date.now() - lastUpdate) < performanceCache.CACHE_DURATION;
-  }
-
-  /**
-   * OPTIMIERT: Aktualisiert Cache für eine gegebene Website-ID und Cache-Type
-   * @param {string} websiteId - Die Website-ID
-   * @param {string} cacheType - Der Cache-Type
-   * @param {any} data - Die zu cachenden Daten
-   */
-  updateCache(websiteId, cacheType, data) {
-    const cacheKey = `${websiteId}_${cacheType}`;
-    
-    switch (cacheType) {
-      case 'chatCount':
-        performanceCache.chatCounts.set(cacheKey, data);
-        break;
-      case 'statistics':
-        performanceCache.statistics.set(cacheKey, data);
-        break;
-    }
-    
-    performanceCache.lastCacheUpdate.set(cacheKey, Date.now());
-    this.performanceStats.cachedResponses++;
-  }
-
-  /**
-   * OPTIMIERT: Holt Daten aus dem Cache oder gibt null zurück
-   * @param {string} websiteId - Die Website-ID
-   * @param {string} cacheType - Der Cache-Type
-   * @returns {any|null} Die gecachten Daten oder null
-   */
-  getFromCache(websiteId, cacheType) {
-    const cacheKey = `${websiteId}_${cacheType}`;
-    
-    if (!this.isCacheValid(websiteId, cacheType)) {
-      return null;
-    }
-    
-    switch (cacheType) {
-      case 'chatCount':
-        return performanceCache.chatCounts.get(cacheKey);
-      case 'statistics':
-        return performanceCache.statistics.get(cacheKey);
-      default:
-        return null;
     }
   }
 
@@ -245,10 +163,6 @@ class WipeBotPlugin {
       // Statistiken speichern
       this.saveStatistics(stats);
       
-      // Cache invalidieren
-      performanceCache.statistics.delete(`${websiteId}_statistics`);
-      performanceCache.lastCacheUpdate.delete(`${websiteId}_statistics`);
-      
       if (this.debugMode) {
         logDebug(`📊 Statistiken für Website ${websiteId} aktualisiert: +${deletedChats} Chats, +${deletedSegments} Segmente`);
       }
@@ -319,10 +233,6 @@ class WipeBotPlugin {
       // Aktualisierte Statistiken speichern
       this.saveStatistics(stats);
       
-      // Cache invalidieren
-      performanceCache.statistics.delete(`${websiteId}_statistics`);
-      performanceCache.lastCacheUpdate.delete(`${websiteId}_statistics`);
-      
       if (this.debugMode) {
         logDebug(`🔄 Statistiken für Website ${websiteId} zurückgesetzt`);
       }
@@ -350,10 +260,6 @@ class WipeBotPlugin {
       
       this.saveStatistics(stats);
       
-      // Cache invalidieren
-      performanceCache.statistics.delete(`${websiteId}_statistics`);
-      performanceCache.lastCacheUpdate.delete(`${websiteId}_statistics`);
-      
       if (this.debugMode) {
         logDebug(`⏰ Nächste geplante Ausführung für Website ${websiteId} aktualisiert: ${new Date(nextRun).toLocaleString()}`);
       }
@@ -363,46 +269,19 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Ruft die aktuelle Anzahl der Chats für eine Website ab (mit Cache und Context-Management)
+   * Ruft die aktuelle Anzahl der Chats für eine Website ab
    * @param {string} websiteId - Die Website-ID
-   * @param {string} context - Kontext für Debug-Management ('debug-trigger', 'auto', etc.)
    * @returns {Promise<number>} Anzahl der Chats
    */
-  async getCurrentChatCount(websiteId, context = 'auto') {
+  async getCurrentChatCount(websiteId) {
     try {
-      this.performanceStats.totalRequests++;
+      // Parameter für alle Konversationen (unabhängig vom Status)
+      const filter = {};
       
-      // Im Debug-Modus nur bei expliziten Debug-Triggern API-Calls machen
-      if (this.debugMode && context !== 'debug-trigger') {
-        const cached = this.getFromCache(websiteId, 'chatCount');
-        if (cached !== null) {
-          logDebug(`📦 Chat-Anzahl aus Cache: ${cached} (Debug-Modus, kein API-Call)`);
-          return cached;
-        }
-        
-        logDebug(`⏸️ Chat-Anzahl-Abfrage pausiert (Debug-Modus ohne expliziten Trigger)`);
-        return 0; // Fallback-Wert
-      }
+      // Alle Konversationen abrufen
+      const conversations = await crispClient.getAllConversations(websiteId, filter);
       
-      // Cache prüfen
-      const cached = this.getFromCache(websiteId, 'chatCount');
-      if (cached !== null) {
-        logDebug(`📦 Chat-Anzahl aus Cache: ${cached}`);
-        return cached;
-      }
-      
-      if (context === 'debug-trigger') {
-        this.performanceStats.debugRequests++;
-        logDebug(`🐞 Debug-Trigger: Lade Chat-Anzahl für Website ${websiteId}`);
-      }
-      
-      // Verwende die optimierte Schätzfunktion des Crisp-Clients
-      const count = await crispClient.getConversationCountEstimate(websiteId, context);
-      
-      // Cache aktualisieren
-      this.updateCache(websiteId, 'chatCount', count);
-      
-      return count;
+      return conversations.length;
     } catch (error) {
       logDebug(`❌ Fehler beim Abrufen der Chat-Anzahl: ${error.message}`);
       return 0;
@@ -410,31 +289,17 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Berechnet die Anzahl der von aktiven Filtern betroffenen Chats (mit Context-Management)
+   * Berechnet die Anzahl der von aktiven Filtern betroffenen Chats
    * @param {string} websiteId - Die Website-ID
-   * @param {string} context - Kontext für Debug-Management
    * @returns {Promise<number>} Anzahl der betroffenen Chats
    */
-  async getAffectedChatCount(websiteId, context = 'auto') {
+  async getAffectedChatCount(websiteId) {
     try {
-      this.performanceStats.totalRequests++;
-      
-      // Im Debug-Modus nur bei expliziten Debug-Triggern API-Calls machen
-      if (this.debugMode && context !== 'debug-trigger') {
-        logDebug(`⏸️ Betroffene-Chat-Anzahl-Abfrage pausiert (Debug-Modus ohne expliziten Trigger)`);
-        return 0; // Fallback-Wert
-      }
-      
       // Alle aktiven Filter laden
       const activeFilters = filterManager.getActiveFilters(websiteId);
       
       if (activeFilters.length === 0) {
         return 0;
-      }
-      
-      if (context === 'debug-trigger') {
-        this.performanceStats.debugRequests++;
-        logDebug(`🐞 Debug-Trigger: Berechne betroffene Chats für ${activeFilters.length} aktive Filter`);
       }
       
       // Für jeden aktiven Filter die betroffenen Konversationen simulieren
@@ -456,7 +321,7 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Verarbeitet eingehende Debug-Trigger-Nachrichten (minimale API-Requests)
+   * Verarbeitet eingehende Debug-Trigger-Nachrichten
    * @param {string} trigger - Der erkannte Trigger-Befehl
    * @param {Array} args - Argumente für den Trigger
    * @param {Object} context - Kontext-Informationen (Website-ID, Session-ID, etc.)
@@ -475,7 +340,7 @@ class WipeBotPlugin {
     try {
       // Spezifische Trigger verarbeiten
       switch (trigger) {
-        // Basisinformationen (keine API-Calls)
+        // Basisinformationen
         case 'ping':
           response = await this.handlePingTrigger(context);
           break;
@@ -492,7 +357,7 @@ class WipeBotPlugin {
           response = await this.handleCrispTrigger(context);
           break;
           
-        // Filter-Verwaltung (minimale API-Calls)
+        // Filter-Verwaltung
         case 'filters':
           response = await this.handleFiltersTrigger(context);
           break;
@@ -500,7 +365,7 @@ class WipeBotPlugin {
           response = await this.handlePreviewTrigger(args[0], context);
           break;
           
-        // Löschoperationen (kontrollierte API-Calls)
+        // Löschoperationen
         case 'wipe':
           if (args[0] === 'test') {
             response = await this.handleWipeTestTrigger(context);
@@ -509,7 +374,7 @@ class WipeBotPlugin {
           }
           break;
           
-        // Log-Verwaltung (keine API-Calls)
+        // Log-Verwaltung
         case 'log':
           if (args[0] === 'test') {
             response = await this.handleLogTestTrigger(context);
@@ -522,21 +387,19 @@ class WipeBotPlugin {
           }
           break;
           
-        // Plugin-Verwaltung (minimale API-Calls)
+        // Plugin-Verwaltung
         case 'disconnect':
           response = await this.handleDisconnectTrigger(context);
           break;
         case 'debug':
           if (args[0] === 'off') {
             response = await this.handleDebugOffTrigger(context);
-          } else if (args[0] === 'stats') {
-            response = await this.handleDebugStatsTrigger(context);
           } else {
             response = { success: false, message: 'Ungültiger Debug-Befehl' };
           }
           break;
           
-        // Statistik-Befehle (kontrollierte API-Calls)
+        // Statistik-Befehle
         case 'stats':
           if (args[0] === 'reset') {
             response = await this.handleStatsResetTrigger(context);
@@ -586,7 +449,7 @@ class WipeBotPlugin {
       await crispClient.sendMessage(context.website_id, context.session_id, {
         type: 'text',
         content: message
-      }, 'debug-trigger');
+      });
       
       logDebug(`📤 Antwort gesendet: ${message.substring(0, 100)}${message.length > 100 ? '...' : ''}`);
     } catch (error) {
@@ -637,12 +500,9 @@ class WipeBotPlugin {
 - \`stats view\` - Zeigt die aktuellen Statistiken
 - \`stats reset\` - Setzt die Statistiken zurück
 
-**Debug-System:**
-- \`debug stats\` - Zeigt Request-Statistiken und Cache-Status
-- \`debug off\` - Deaktiviert den Debug-Modus
-
 **Plugin-Verwaltung:**
 - \`disconnect\` - Trennt das Plugin von dieser Website (mit Bestätigung)
+- \`debug off\` - Deaktiviert den Debug-Modus
 `;
 
     logDebug('📚 Hilfe-Befehl empfangen');
@@ -650,48 +510,7 @@ class WipeBotPlugin {
   }
 
   /**
-   * NEUE FUNKTION: Verarbeitet den 'debug stats' Trigger für Request-Statistiken
-   * @param {Object} context - Kontext-Informationen
-   * @returns {Object} - Ergebnis mit Debug-Statistiken
-   */
-  async handleDebugStatsTrigger(context) {
-    try {
-      const crispStats = crispClient.getDebugRequestStats();
-      const uptime = Date.now() - this.performanceStats.startTime;
-      
-      const debugStats = {
-        pluginUptime: Math.floor(uptime / 1000) + ' Sekunden',
-        totalRequests: this.performanceStats.totalRequests,
-        debugRequests: this.performanceStats.debugRequests,
-        cachedResponses: this.performanceStats.cachedResponses,
-        crispApiStats: {
-          debugMode: crispStats.debugMode,
-          requestCount: crispStats.requestCount,
-          limit: crispStats.limit,
-          remaining: crispStats.remaining,
-          enabled: crispStats.enabled
-        },
-        cacheStats: {
-          chatCounts: performanceCache.chatCounts.size,
-          statistics: performanceCache.statistics.size,
-          lastUpdates: performanceCache.lastCacheUpdate.size
-        }
-      };
-      
-      logDebug('📊 Debug-Stats-Befehl empfangen');
-      
-      return {
-        success: true,
-        message: `**Debug-Statistiken:**\n\n${JSON.stringify(debugStats, null, 2)}`
-      };
-    } catch (error) {
-      logDebug(`❌ Fehler beim Abrufen der Debug-Statistiken: ${error.message}`);
-      return { success: false, message: `Fehler beim Abrufen der Debug-Statistiken: ${error.message}` };
-    }
-  }
-
-  /**
-   * OPTIMIERT: Verarbeitet den 'stats view' Trigger (mit kontrollierter API-Nutzung)
+   * Verarbeitet den 'stats view' Trigger
    * @param {Object} context - Kontext-Informationen
    * @returns {Object} - Ergebnis mit Statistik-Informationen
    */
@@ -704,10 +523,8 @@ class WipeBotPlugin {
       }
       
       const stats = this.loadStatistics(websiteId).websites[websiteId];
-      
-      // Kontrollierte API-Calls mit Debug-Trigger-Kontext
-      const currentChats = await this.getCurrentChatCount(websiteId, 'debug-trigger');
-      const affectedChats = await this.getAffectedChatCount(websiteId, 'debug-trigger');
+      const currentChats = await this.getCurrentChatCount(websiteId);
+      const affectedChats = await this.getAffectedChatCount(websiteId);
       
       const formattedStats = {
         currentChats,
@@ -773,7 +590,7 @@ class WipeBotPlugin {
     logDebug('🏷️ Versions-Befehl empfangen');
     return { 
       success: true, 
-      message: `WipeBot Plugin v${this.version} | DEBUG_MODE: ${this.debugMode ? 'AKTIV' : 'INAKTIV'} | Request-Management: AKTIV`
+      message: `WipeBot Plugin v${this.version} | DEBUG_MODE: ${this.debugMode ? 'AKTiV' : 'INAKTIV'}`
     };
   }
 
@@ -841,7 +658,7 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Verarbeitet den 'preview [filtername]' Trigger (mit kontrollierter API-Nutzung)
+   * Verarbeitet den 'preview [filtername]' Trigger
    * @param {string} filterName - Name des Filters, der angezeigt werden soll
    * @param {Object} context - Kontext-Informationen
    * @returns {Object} - Ergebnis mit Filterdetails
@@ -869,7 +686,7 @@ class WipeBotPlugin {
       };
     }
     
-    // Kontrollierte Simulation mit Debug-Trigger-Kontext
+    // Simulation durchführen, um zu sehen, wie viele Konversationen betroffen wären
     const simulation = await filterManager.simulateCleanup(websiteId, filter.id);
     
     // Formatierte Filterdetails erstellen
@@ -919,7 +736,7 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Verarbeitet den 'wipe test' Trigger (kontrollierte API-Nutzung)
+   * Verarbeitet den 'wipe test' Trigger
    * @param {Object} context - Kontext-Informationen
    * @returns {Object} - Ergebnis mit Simulationsergebnissen
    */
@@ -939,7 +756,7 @@ class WipeBotPlugin {
       };
     }
     
-    // Für jeden aktiven Filter eine Simulation durchführen (mit Debug-Trigger-Kontext)
+    // Für jeden aktiven Filter eine Simulation durchführen
     const results = [];
     
     for (const filter of filters) {
@@ -969,7 +786,7 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Verarbeitet den 'wipe [filtername]' Trigger (kontrollierte API-Nutzung)
+   * Verarbeitet den 'wipe [filtername]' Trigger
    * @param {string} filterName - Name des Filters, der ausgeführt werden soll
    * @param {Object} context - Kontext-Informationen
    * @returns {Object} - Ergebnis der Löschoperation
@@ -1000,7 +817,7 @@ class WipeBotPlugin {
     // Vorwarnung senden
     await this.sendResponse(context, `⚠️ Filter "${filter.name}" wird ausgeführt. Bitte warten...`);
     
-    // Filterlöschung durchführen (mit Debug-Trigger-Kontext)
+    // Filterlöschung durchführen
     const result = await filterManager.runCleanup(websiteId, filter.id);
     
     if (!result.success) {
@@ -1137,14 +954,13 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Führt einen Cleanup gemäß einem Filter durch (mit Context-Management)
+   * Führt einen Cleanup gemäß einem Filter durch
    * @param {string} websiteId - Die Website-ID
    * @param {string} filterId - Die ID des Filters
    * @param {boolean} dryRun - Wenn true, werden keine tatsächlichen Löschungen durchgeführt
-   * @param {string} context - Kontext für API-Management
    * @returns {Promise<Object>} - Ergebnis des Cleanups
    */
-  async runCleanup(websiteId, filterId, dryRun = false, context = 'auto') {
+  async runCleanup(websiteId, filterId, dryRun = false) {
     try {
       if (!websiteId) {
         throw new Error('Website-ID ist erforderlich');
@@ -1161,7 +977,7 @@ class WipeBotPlugin {
         throw new Error(`Filter mit ID/Name ${filterId} nicht gefunden`);
       }
       
-      // Cleanup durchführen (mit Context-Information)
+      // Cleanup durchführen
       const result = await filterManager.runCleanup(websiteId, filter.id, dryRun);
       
       if (!dryRun && result.success) {
@@ -1189,7 +1005,7 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: Stellt eine REST-API für die UI-Integration bereit (mit Request-Management)
+   * Stellt eine REST-API für die UI-Integration bereit
    * @param {Object} app - Express-App-Instanz
    */
   setupRestApi(app) {
@@ -1223,7 +1039,7 @@ class WipeBotPlugin {
     // Plugin-Verwaltung
     app.delete('/api/plugin/:websiteId', this.handleDisconnectPlugin.bind(this));
     
-    // OPTIMIERTE Statistik-Endpunkte mit Cache-Management
+    // Statistik-Endpunkte
     app.get('/api/statistics/:websiteId', this.handleGetStatistics.bind(this));
     app.get('/api/statistics/:websiteId/detailed', this.handleGetDetailedStatistics.bind(this));
     app.post('/api/statistics/:websiteId/reset', this.handleResetStatistics.bind(this));
@@ -1402,7 +1218,7 @@ class WipeBotPlugin {
   }
 
   /**
-   * OPTIMIERT: REST-API: Führt einen Cleanup aus (mit Context-Management)
+   * REST-API: Führt einen Cleanup aus
    */
   async handleRunCleanup(req, res) {
     try {
@@ -1413,4 +1229,310 @@ class WipeBotPlugin {
       const { confirm } = req.body;
       
       if (!confirm || confirm !== true) {
-        return res.status(400).json
+        return res.status(400).json({ 
+          success: false, 
+          error: 'Bestätigung erforderlich. Sende { confirm: true } im Request-Body.'
+        });
+      }
+      
+      const result = await this.runCleanup(websiteId, filterId, false);
+      
+      if (result.success) {
+        res.json(result);
+      } else {
+        res.status(400).json(result);
+      }
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei POST /api/cleanup/${req.params.filterId}: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+
+  /**
+   * REST-API: Testet einen Cleanup (keine tatsächliche Löschung)
+   */
+  async handleTestCleanup(req, res) {
+    try {
+      const websiteId = req.params.websiteId;
+      const filterId = req.params.filterId;
+      
+      const result = await this.runCleanup(websiteId, filterId, true);
+      
+      if (result.success) {
+        res.json(result);
+      } else {
+        res.status(400).json(result);
+      }
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei POST /api/cleanup/${req.params.filterId}/test: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+
+  /**
+   * REST-API: Gibt alle Mailboxes für eine Website zurück
+   */
+  async handleGetMailboxes(req, res) {
+    try {
+      const websiteId = req.params.websiteId;
+      
+      const mailboxes = await crispClient.getMailboxes(websiteId);
+      
+      res.json({ success: true, mailboxes: mailboxes.data || [] });
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei GET /api/mailboxes: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+
+  /**
+   * REST-API: Gibt alle aktiven Plattformen für eine Website zurück
+   */
+  async handleGetPlatforms(req, res) {
+    try {
+      const websiteId = req.params.websiteId;
+      
+      const plugins = await crispClient.getWebsitePlugins(websiteId);
+      
+      // Plattformen aus den Plugins extrahieren
+      const platforms = plugins
+        .filter(plugin => plugin.id.startsWith('plugin:'))
+        .map(plugin => {
+          const platformId = plugin.id.replace('plugin:', '');
+          return { 
+            id: platformId,
+            name: platformId.charAt(0).toUpperCase() + platformId.slice(1)
+          };
+        });
+      
+      // Immer Webchat hinzufügen, da er standardmäßig verfügbar ist
+      if (!platforms.some(p => p.id === 'webchat')) {
+        platforms.push({ id: 'webchat', name: 'Webchat' });
+      }
+      
+      res.json({ success: true, platforms });
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei GET /api/platforms: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+
+  /**
+   * REST-API: Trennt das Plugin von einer Website
+   */
+  async handleDisconnectPlugin(req, res) {
+    try {
+      const websiteId = req.params.websiteId;
+      
+      // Bestätigung prüfen
+      const { confirm } = req.body;
+      
+      if (!confirm || confirm !== true) {
+        return res.status(400).json({ 
+          success: false, 
+          error: 'Bestätigung erforderlich. Sende { confirm: true } im Request-Body.'
+        });
+      }
+      
+      const result = await filterManager.removeWebsiteData(websiteId);
+      
+      if (result.success) {
+        res.json({ 
+          success: true, 
+          message: 'Website erfolgreich vom Plugin getrennt. Alle Plugin-Daten wurden gelöscht.' 
+        });
+      } else {
+        res.status(400).json(result);
+      }
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei DELETE /api/plugin/${req.params.websiteId}: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+
+  /**
+   * REST-API: Gibt die Statistiken für eine Website zurück
+   */
+  async handleGetStatistics(req, res) {
+    try {
+      const websiteId = req.params.websiteId;
+      
+      // Statistiken laden
+      const stats = this.loadStatistics(websiteId).websites[websiteId];
+      
+      // Aktuelle Chat-Anzahl abrufen
+      const currentChats = await this.getCurrentChatCount(websiteId);
+      
+      // Anzahl der betroffenen Chats berechnen
+      const affectedChats = await this.getAffectedChatCount(websiteId);
+      
+      // Anzahl der aktiven Filter abrufen
+      const activeFilters = filterManager.getActiveFilters(websiteId).length;
+      
+      const statistics = {
+        currentChats,
+        affectedChats,
+        activeFilters,
+        totalDeletedChats: stats.totalDeletedChats,
+        totalDeletedSegments: stats.totalDeletedSegments,
+        lastTwoWeeks: {
+          deletedChats: stats.lastTwoWeeks.deletedChats,
+          deletedSegments: stats.lastTwoWeeks.deletedSegments
+        },
+        lastRun: stats.lastRun,
+        nextScheduledRun: stats.nextScheduledRun
+      };
+      
+      res.json({ success: true, statistics });
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei GET /api/statistics/${req.params.websiteId}: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+
+  /**
+   * REST-API: Gibt detaillierte Statistiken für eine Website zurück
+   */
+  async handleGetDetailedStatistics(req, res) {
+    try {
+      const websiteId = req.params.websiteId;
+      const period = req.query.period || 'week'; // 'day', 'week', 'month', 'all'
+      
+      // Statistiken laden
+      const stats = this.loadStatistics(websiteId).websites[websiteId];
+      
+      // Zeitraum berechnen
+      const now = new Date();
+      let startDate;
+      
+      switch (period) {
+        case 'day':
+          startDate = new Date(now);
+          startDate.setDate(startDate.getDate() - 1);
+          break;
+        case 'week':
+          startDate = new Date(now);
+          startDate.setDate(startDate.getDate() - 7);
+          break;
+        case 'month':
+          startDate = new Date(now);
+          startDate.setDate(startDate.getDate() - 30);
+          break;
+        case 'all':
+        default:
+          startDate = new Date(0); // Beginnend von Unix-Epoche
+          break;
+      }
+      
+      const startDateStr = startDate.toISOString().split('T')[0];
+      
+      // Detaillierte Statistiken nach Datum filtern
+      const filteredDailyStats = {};
+      let totalDeletedChats = 0;
+      let totalDeletedSegments = 0;
+      
+      for (const [date, dayStat] of Object.entries(stats.dailyStats)) {
+        if (date >= startDateStr) {
+          filteredDailyStats[date] = dayStat;
+          totalDeletedChats += dayStat.deletedChats;
+          totalDeletedSegments += dayStat.deletedSegments;
+        }
+      }
+      
+      // Aktuelle Chat-Anzahl abrufen
+      const currentChats = await this.getCurrentChatCount(websiteId);
+      
+      // Anzahl der betroffenen Chats berechnen
+      const affectedChats = await this.getAffectedChatCount(websiteId);
+      
+      // Anzahl der aktiven Filter abrufen
+      const activeFilters = filterManager.getActiveFilters(websiteId).length;
+      
+      const detailedStatistics = {
+        period,
+        summary: {
+          currentChats,
+          affectedChats,
+          activeFilters,
+          deletedChats: totalDeletedChats,
+          deletedSegments: totalDeletedSegments
+        },
+        dailyStats: filteredDailyStats,
+        lastRun: stats.lastRun ? new Date(stats.lastRun).toISOString() : null,
+        nextScheduledRun: stats.nextScheduledRun ? new Date(stats.nextScheduledRun).toISOString() : null
+      };
+      
+      res.json({ success: true, statistics: detailedStatistics });
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei GET /api/statistics/${req.params.websiteId}/detailed: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+
+  /**
+   * REST-API: Setzt die Statistiken für eine Website zurück
+   */
+  async handleResetStatistics(req, res) {
+    try {
+      const websiteId = req.params.websiteId;
+      
+      // Bestätigung prüfen
+      const { confirm } = req.body;
+      
+      if (!confirm || confirm !== true) {
+        return res.status(400).json({ 
+          success: false, 
+          error: 'Bestätigung erforderlich. Sende { confirm: true } im Request-Body.'
+        });
+      }
+      
+      const result = this.resetStatistics(websiteId);
+      
+      if (result.success) {
+        res.json(result);
+      } else {
+        res.status(400).json(result);
+      }
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei POST /api/statistics/${req.params.websiteId}/reset: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+  
+  /**
+   * REST-API: Gibt den aktuellen Status des Cron-Schedulers zurück
+   */
+  async handleGetSchedulerStatus(req, res) {
+    try {
+      // Scheduler-Status vom cron_scheduler-Modul abrufen
+      const schedulerStatus = require('../cron_scheduler').getSchedulerStats();
+      
+      res.json({
+        success: true,
+        scheduler: schedulerStatus
+      });
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei GET /api/system/scheduler: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+  
+  /**
+   * REST-API: Gibt die Plugin-Version zurück
+   */
+  async handleGetPluginVersion(req, res) {
+    try {
+      res.json({
+        success: true,
+        version: this.version,
+        debugMode: this.debugMode
+      });
+    } catch (error) {
+      logDebug(`❌ API-Fehler bei GET /api/system/version: ${error.message}`);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  }
+}
+
+// Einzelne Instanz exportieren
+module.exports = new WipeBotPlugin();
