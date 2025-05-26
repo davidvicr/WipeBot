@@ -1,8 +1,12 @@
 node_modules
 .idea
 node_modules/
-logs/daily/*
-logs/archive/*
+logs/daily/
+!logs/daily/.gitkeep
+logs/archive/
+!logs/archive/.gitkeep
+docs/
+!docs/.gitkeep
 *.bak
 *.zip
 *.tar

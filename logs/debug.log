@@ -1,0 +1,4 @@
+[2025-05-26T09:57:08.245Z] [DEBUG] ✅ Umgebungsvariablen erfolgreich validiert
+[2025-05-26T09:57:08.257Z] [API-INFO] 🔐 Crisp-API-Client-Authentifizierung mit authenticate() durchgeführt
+[2025-05-26T09:57:08.259Z] [API-INFO] ✅ Axios-Instance mit Basic Auth konfiguriert
+[2025-05-26T09:57:08.260Z] [API-INFO] 🔌 Crisp API Client initialisiert
